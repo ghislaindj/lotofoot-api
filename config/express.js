@@ -43,6 +43,8 @@ if (config.env === 'development') {
     }));
 }
 
+app.set('superSecret', config.secret);
+
 // mount all routes on /api path
 app.use('/api', routes);
 

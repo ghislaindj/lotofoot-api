@@ -1,4 +1,5 @@
 import express from 'express';
+import userRoutes from './user';
 import gameRoutes from './game';
 import teamRoutes from './team';
 
@@ -11,10 +12,8 @@ router.get('/', (req, res) =>
     })
 );
 
-// mount game routes at /games
+router.use('/users', userRoutes);
 router.use('/games', gameRoutes);
-
 router.use('/teams', teamRoutes);
-
 
 export default router;

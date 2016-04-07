@@ -7,6 +7,19 @@ export default {
             gamename: Joi.string().required()
         }
     },
+    registerUser: {
+        body: {
+                email: Joi.string().email().required(),
+                password: Joi.string().min(3).max(20).required(),
+                firstName: Joi.string().required()
+        }
+    },
+    loginUser: {
+        body: {
+                email: Joi.string().email().required(),
+                password: Joi.string().min(3).max(20).required()
+        }
+    }
 
     // // UPDATE /api/users/:userId
     // updateUser: {

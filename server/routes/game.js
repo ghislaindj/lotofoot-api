@@ -3,7 +3,7 @@ import validate from 'express-validation';
 import paramValidation from '../../config/param-validation';
 import gameCtrl from '../controllers/game';
 
-const router = express.Router();    // eslint-disable-line new-cap
+const router = express.Router();
 
 router.route('/')
     /** GET /api/games - Get list of games */
