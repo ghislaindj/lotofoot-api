@@ -1,3 +1,3 @@
 # Lotofoot API
 
-More to come ...
+DEV : `foreman run npm run dev`
