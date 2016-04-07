@@ -7,16 +7,60 @@ import APIError from '../helpers/APIError';
  * Game Schema
  */
 const GameSchema = new mongoose.Schema({
-    gamename: {
-        type: String,
-        required: true
+    friendlyId: {
+        type: Number
     },
     createdAt: {
         type: Date,
         default: Date.now
+    },
+    phase: {
+        type: Number
+    },
+    date: {
+        type: String
+    },
+    datetime: {
+        type: Date
+    },
+    stadium: {
+        type: String
+    },
+    teamA: {
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: 'Team'
+    },
+    teamB: {
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: 'Team'
+    },
+    futureTeamA: {
+        type: String
+    },
+    futureTeamB: {
+        type: String
+    },
+    channel: {
+        type: String
+    },
+    group: {
+        type: String
     }
 });
-
+// id: 1,
+//     phase: 0,
+//     group: 'a',
+//     date: '2016-06-10',
+//     time: '21h00',
+//     stadium: 'Saint-Denis',
+//     channel: 'tf1',
+//     teamA: 'France',
+//     teamB: 'Roumanie',
+//     goalA: -1,
+//     goalB: -1,
+//     winner: '',
+//     tme: -1,
+//     pda: -1
 /**
  * Add your
  * - pre-save hooks
@@ -41,6 +85,7 @@ GameSchema.statics = {
      */
     get(id) {
         return this.findById(id)
+            .populate('teamA teamB')
             .execAsync().then((game) => {
                 if (game) {
                     return game;
@@ -58,9 +103,10 @@ GameSchema.statics = {
      */
     list({ skip = 0, limit = 50 } = {}) {
         return this.find()
-            .sort({ createdAt: -1 })
+            .sort({ datetime: 1 })
             .skip(skip)
             .limit(limit)
+            .populate('teamA teamB')
             .execAsync();
     }
 };

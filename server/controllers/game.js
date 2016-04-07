@@ -1,11 +1,12 @@
 import Game from '../models/game';
+import Team from '../models/team';
 
 /**
  * Load game and append to req.
  */
 function load(req, res, next, id) {
     Game.get(id).then((game) => {
-        req.game = game;        // eslint-disable-line no-param-reassign
+        req.game = game;
         return next();
     }).error((e) => next(e));
 }

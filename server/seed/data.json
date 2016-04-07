@@ -1,0 +1,704 @@
+{
+    "_dependencies": {
+        "moment": "moment"
+    },
+    "teams": {
+        "_model": "Team",
+        "albania": {
+            "name": "Albanie",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "austria": {
+            "name": "Autriche",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "belgium": {
+            "name": "Belgique",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "croatia": {
+            "name": "Croatie",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "czech-republic": {
+            "name": "République Tchèque",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "england": {
+            "name": "Angleterre",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "france": {
+            "name": "France",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "germany": {
+            "name": "Allemagne",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "hungary": {
+            "name": "Hongrie",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "iceland": {
+            "name": "Islande",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "italy": {
+            "name": "Italie",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "northern-ireland": {
+            "name": "Irlande du Nord",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "poland": {
+            "name": "Pologne",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "portugal": {
+            "name": "Portugal",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "ireland": {
+            "name": "République d'Irlande",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "romania": {
+            "name": "Roumanie",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "russia": {
+            "name": "Russie",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "slovakia": {
+            "name": "Slovaquie",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "spain": {
+            "name": "Espagne",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "sweden": {
+            "name": "Suède",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "switzerland": {
+            "name": "Suisse",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "turkey": {
+            "name": "Turquie",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "ukraine": {
+            "name": "Ukraine",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        },
+        "wales": {
+            "name": "Pays de Galles",
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+        }
+    },
+    "games": {
+        "_model": "Game",
+        "1":{
+            "friendlyId": 1,
+            "phase": 0,
+            "group": "a",
+            "date": "2016-06-10",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Saint-Denis",
+            "channel": "tf1",
+            "teamA": "->teams.france",
+            "teamB": "->teams.romania"
+          },
+        "2":{
+            "friendlyId": 2,
+            "phase": 0,
+            "group": "a",
+            "date": "2016-06-11",
+            "time": "15:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lens",
+            "channel": "tf1",
+            "teamA": "->teams.albania",
+            "teamB": "->teams.switzerland"
+          },
+        "3":{
+            "friendlyId": 3,
+            "phase": 0,
+            "group": "b",
+            "date": "2016-06-11",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Bordeaux",
+            "channel": "",
+            "teamA": "->teams.wales",
+            "teamB": "->teams.slovakia"
+          },
+        "4":{
+            "friendlyId": 4,
+            "phase": 0,
+            "group": "b",
+            "date": "2016-06-11",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Marseille",
+            "channel": "m6",
+            "teamA": "->teams.england",
+            "teamB": "->teams.russia"
+          },
+        "5":{
+            "friendlyId": 5,
+            "phase": 0,
+            "group": "d",
+            "date": "2016-06-12",
+            "time": "15:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Paris",
+            "channel": "tf1",
+            "teamA": "->teams.turkey",
+            "teamB": "->teams.croatia"
+          },
+        "6":{
+            "friendlyId": 6,
+            "phase": 0,
+            "group": "c",
+            "date": "2016-06-12",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Nice",
+            "channel": "",
+            "teamA": "->teams.poland",
+            "teamB": "->teams.northern-ireland"
+          },
+        "7":{
+            "friendlyId": 7,
+            "phase": 0,
+            "group": "c",
+            "date": "2016-06-12",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lille",
+            "channel": "tf1",
+            "teamA": "->teams.germany",
+            "teamB": "->teams.ukraine"
+          },
+        "8":{
+            "friendlyId": 8,
+            "phase": 0,
+            "group": "d",
+            "date": "2016-06-13",
+            "time": "15:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Toulouse",
+            "channel": "",
+            "teamA": "->teams.spain",
+            "teamB": "->teams.czech-republic"
+          },
+        "9":{
+            "friendlyId": 9,
+            "phase": 0,
+            "group": "e",
+            "date": "2016-06-13",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Saint-Etienne",
+            "channel": "",
+            "teamA": "->teams.ireland",
+            "teamB": "->teams.sweden"
+          },
+        "10":{
+            "friendlyId": 10,
+            "phase": 0,
+            "group": "e",
+            "date": "2016-06-13",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lyon",
+            "channel": "m6",
+            "teamA": "->teams.belgium",
+            "teamB": "->teams.italy"
+          },
+        "11":{
+            "friendlyId": 11,
+            "phase": 0,
+            "group": "f",
+            "date": "2016-06-14",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Bordeaux",
+            "channel": "",
+            "teamA": "->teams.austria",
+            "teamB": "->teams.hungary"
+          },
+        "12":{
+            "friendlyId": 12,
+            "phase": 0,
+            "group": "f",
+            "date": "2016-06-14",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Saint-Etienne",
+            "channel": "",
+            "teamA": "->teams.portugal",
+            "teamB": "->teams.iceland"
+          },
+        "13":{
+            "friendlyId": 13,
+            "phase": 0,
+            "group": "b",
+            "date": "2016-06-15",
+            "time": "15:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lille",
+            "channel": "",
+            "teamA": "->teams.russia",
+            "teamB": "->teams.slovakia"
+          },
+        "14":{
+            "friendlyId": 14,
+            "phase": 0,
+            "group": "a",
+            "date": "2016-06-15",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Paris",
+            "channel": "tf1",
+            "teamA": "->teams.romania",
+            "teamB": "->teams.switzerland"
+          },
+        "15":{
+            "friendlyId": 15,
+            "phase": 0,
+            "group": "a",
+            "date": "2016-06-15",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Marseille",
+            "channel": "tf1",
+            "teamA": "->teams.france",
+            "teamB": "->teams.albania"
+          },
+        "16":{
+            "friendlyId": 16,
+            "phase": 0,
+            "group": "b",
+            "date": "2016-06-16",
+            "time": "15:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lens",
+            "channel": "",
+            "teamA": "->teams.england",
+            "teamB": "->teams.wales"
+          },
+        "17":{
+            "friendlyId": 17,
+            "phase": 0,
+            "group": "c",
+            "date": "2016-06-16",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lyon",
+            "channel": "",
+            "teamA": "->teams.ukraine",
+            "teamB": "->teams.northern-ireland"
+          },
+        "18":{
+            "friendlyId": 18,
+            "phase": 0,
+            "group": "c",
+            "date": "2016-06-16",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Saint-Denis",
+            "channel": "m6",
+            "teamA": "->teams.germany",
+            "teamB": "->teams.poland"
+          },
+        "19":{
+            "friendlyId": 19,
+            "phase": 0,
+            "group": "e",
+            "date": "2016-06-17",
+            "time": "15:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Toulouse",
+            "channel": "tf1",
+            "teamA": "->teams.italy",
+            "teamB": "->teams.Suède"
+          },
+        "20":{
+            "friendlyId": 20,
+            "phase": 0,
+            "group": "d",
+            "date": "2016-06-17",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Saint-Etiennes",
+            "channel": "",
+            "teamA": "->teams.czech-republic",
+            "teamB": "->teams.croatia"
+          },
+        "21":{
+            "friendlyId": 21,
+            "phase": 0,
+            "group": "d",
+            "date": "2016-06-17",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Nice",
+            "channel": "m6",
+            "teamA": "->teams.spain",
+            "teamB": "->teams.turkey"
+          },
+        "22":{
+            "friendlyId": 22,
+            "phase": 0,
+            "group": "e",
+            "date": "2016-06-18",
+            "time": "15:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Bordeaux",
+            "channel": "tf1",
+            "teamA": "->teams.belgium",
+            "teamB": "->teams.ireland"
+          },
+        "23":{
+            "friendlyId": 23,
+            "phase": 0,
+            "group": "f",
+            "date": "2016-06-18",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Marseille",
+            "channel": "",
+            "teamA": "->teams.iceland",
+            "teamB": "->teams.hungary"
+          },
+        "24":{
+            "friendlyId": 24,
+            "phase": 0,
+            "group": "f",
+            "date": "2016-06-18",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Paris",
+            "channel": "tf1",
+            "teamA": "->teams.portugal",
+            "teamB": "->teams.austria"
+          },
+        "25":{
+            "friendlyId": 25,
+            "phase": 0,
+            "group": "a",
+            "date": "2016-06-19",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lyon",
+            "channel": "m6",
+            "teamA": "->teams.romania",
+            "teamB": "->teams.albania"
+          },
+        "26":{
+            "friendlyId": 26,
+            "phase": 0,
+            "group": "a",
+            "date": "2016-06-19",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lille",
+            "channel": "",
+            "teamA": "->teams.switzerland",
+            "teamB": "->teams.france"
+          },
+        "27":{
+            "friendlyId": 27,
+            "phase": 0,
+            "group": "b",
+            "date": "2016-06-20",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Toulouse",
+            "channel": "tf1",
+            "teamA": "->teams.russia",
+            "teamB": "->teams.wales"
+          },
+        "28":{
+            "friendlyId": 28,
+            "phase": 0,
+            "group": "b",
+            "date": "2016-06-20",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Saint-Etienne",
+            "channel": "",
+            "teamA": "->teams.slovakia",
+            "teamB": "->teams.england"
+          },
+        "29":{
+            "friendlyId": 29,
+            "phase": 0,
+            "group": "c",
+            "date": "2016-06-21",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Marseille",
+            "channel": "",
+            "teamA": "->teams.ukraine",
+            "teamB": "->teams.poland"
+          },
+        "30":{
+            "friendlyId": 30,
+            "phase": 0,
+            "group": "c",
+            "date": "2016-06-21",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Paris",
+            "channel": "",
+            "teamA": "->teams.northern-ireland",
+            "teamB": "->teams.germany"
+          },
+        "31":{
+            "friendlyId": 31,
+            "phase": 0,
+            "group": "d",
+            "date": "2016-06-21",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lens",
+            "channel": "tf1",
+            "teamA": "->teams.czech-republic",
+            "teamB": "->teams.turkey"
+          },
+        "32":{
+            "friendlyId": 32,
+            "phase": 0,
+            "group": "d",
+            "date": "2016-06-21",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Bordeaux",
+            "channel": "",
+            "teamA": "->teams.croatia",
+            "teamB": "->teams.spain"
+          },
+        "33":{
+            "friendlyId": 33,
+            "phase": 0,
+            "group": "f",
+            "date": "2016-06-22",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Saint-Denis",
+            "channel": "",
+            "teamA": "->teams.iceland",
+            "teamB": "->teams.austria"
+          },
+        "34":{
+            "friendlyId": 34,
+            "phase": 0,
+            "group": "f",
+            "date": "2016-06-22",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lyon",
+            "channel": "",
+            "teamA": "->teams.hungary",
+            "teamB": "->teams.portugal"
+          },
+        "35":{
+            "friendlyId": 35,
+            "phase": 0,
+            "group": "e",
+            "date": "2016-06-22",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lille",
+            "channel": "m6",
+            "teamA": "->teams.italy",
+            "teamB": "->teams.ireland"
+          },
+        "36":{
+            "friendlyId": 36,
+            "phase": 0,
+            "group": "e",
+            "date": "2016-06-22",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Nice",
+            "channel": "",
+            "teamA": "->teams.sweden",
+            "teamB": "->teams.belgium"
+          },
+        "37":{
+            "friendlyId": 37,
+            "phase": 1,
+            "date": "2016-06-25",
+            "time": "15:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Saint-Étienne",
+            "channel": "",
+            "futureTeamA": "a2",
+            "futureTeamB": "c2"
+          },
+        "38":{
+            "friendlyId": 38,
+            "phase": 1,
+            "date": "2016-06-25",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Paris",
+            "channel": "",
+            "futureTeamA": "b1",
+            "futureTeamB": "acd3"
+          },
+        "39":{
+            "friendlyId": 39,
+            "phase": 1,
+            "date": "2016-06-25",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lens",
+            "channel": "",
+            "futureTeamA": "d1",
+            "futureTeamB": "bef3"
+          },
+        "40":{
+            "friendlyId": 40,
+            "phase": 1,
+            "date": "2016-06-26",
+            "time": "15:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lyon",
+            "channel": "",
+            "futureTeamA": "a1",
+            "futureTeamB": "cde3"
+          },
+        "41":{
+            "friendlyId": 41,
+            "phase": 1,
+            "date": "2016-06-26",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lille",
+            "channel": "",
+            "futureTeamA": "c1",
+            "futureTeamB": "abf3"
+          },
+        "42":{
+            "friendlyId": 42,
+            "phase": 1,
+            "date": "2016-06-26",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Toulouse",
+            "channel": "",
+            "futureTeamA": "f1",
+            "futureTeamB": "e2"
+          },
+        "43":{
+            "friendlyId": 43,
+            "phase": 1,
+            "date": "2016-06-27",
+            "time": "18:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Saint-Denis",
+            "channel": "",
+            "futureTeamA": "e1",
+            "futureTeamB": "d2"
+          },
+        "44":{
+            "friendlyId": 44,
+            "phase": 1,
+            "date": "2016-06-27",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Nice",
+            "channel": "",
+            "futureTeamA": "b2",
+            "futureTeamB": "f2"
+          },
+        "45":{
+            "friendlyId": 45,
+            "phase": 2,
+            "date": "2016-06-30",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Marseille",
+            "channel": "",
+            "futureTeamA": "v37",
+            "futureTeamB": "v39"
+          },
+        "46":{
+            "friendlyId": 46,
+            "phase": 2,
+            "date": "2016-07-01",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lille",
+            "channel": "",
+            "futureTeamA": "v38",
+            "futureTeamB": "v42"
+          },
+        "47":{
+            "friendlyId": 47,
+            "phase": 2,
+            "date": "2016-07-02",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Bordeaux",
+            "channel": "",
+            "futureTeamA": "v41",
+            "futureTeamB": "v43"
+          },
+        "48":{
+            "friendlyId": 48,
+            "phase": 2,
+            "date": "2016-07-03",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Saint-Denis",
+            "channel": "",
+            "futureTeamA": "v40",
+            "futureTeamB": "v44"
+          },
+        "49":{
+            "friendlyId": 49,
+            "phase": 3,
+            "date": "2016-07-06",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lyon",
+            "channel": "",
+            "futureTeamA": "v45",
+            "futureTeamB": "v46"
+          },
+        "50":{
+            "friendlyId": 50,
+            "phase": 3,
+            "date": "2016-07-07",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Marseille",
+            "channel": "",
+            "futureTeamA": "v47",
+            "futureTeamB": "v48"
+          },
+        "51":{
+            "friendlyId": 51,
+            "phase": 4,
+            "date": "2016-07-10",
+            "time": "21:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Saint-Denis",
+            "channel": "",
+            "futureTeamA": "v49",
+            "futureTeamB": "v50"
+          }
+    }
+}
