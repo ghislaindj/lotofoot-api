@@ -1,0 +1,3 @@
+# Lotofoot API
+
+More to come ...
