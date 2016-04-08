@@ -7,32 +7,32 @@
         "albania": {
             "slug": "albania",
             "name": "Albanie",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg"
         },
         "austria": {
             "slug": "austria",
             "name": "Autriche",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg"
         },
         "belgium": {
             "slug": "belgium",
             "name": "Belgique",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Belgium_%28civil%29.svg"
         },
         "croatia": {
             "slug": "croatia",
             "name": "Croatie",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg"
         },
         "czech-republic": {
             "slug": "czech-republic",
             "name": "République Tchèque",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg"
         },
         "england": {
             "slug": "england",
             "name": "Angleterre",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/Flag_of_England.svg"
         },
         "france": {
             "slug": "france",
@@ -42,87 +42,87 @@
         "germany": {
             "slug": "germany",
             "name": "Allemagne",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg"
         },
         "hungary": {
             "slug": "hungary",
             "name": "Hongrie",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Flag_of_Hungary.svg"
         },
         "iceland": {
             "slug": "iceland",
             "name": "Islande",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg"
         },
         "italy": {
             "slug": "italy",
             "name": "Italie",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg"
         },
         "northern-ireland": {
             "slug": "northern-ireland",
             "name": "Irlande du Nord",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Northern_Ireland.svg"
         },
         "poland": {
             "slug": "poland",
             "name": "Pologne",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg"
         },
         "portugal": {
             "slug": "portugal",
             "name": "Portugal",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg"
         },
         "ireland": {
             "slug": "ireland",
             "name": "République d'Irlande",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg"
         },
         "romania": {
             "slug": "romania",
             "name": "Roumanie",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg"
         },
         "russia": {
             "slug": "russia",
             "name": "Russie",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"
         },
         "slovakia": {
             "slug": "slovakia",
             "name": "Slovaquie",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg"
         },
         "spain": {
             "slug": "spain",
             "name": "Espagne",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
         },
         "sweden": {
             "slug": "sweden",
             "name": "Suède",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg"
         },
         "switzerland": {
             "slug": "switzerland",
             "name": "Suisse",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Switzerland_%28Pantone%29.svg"
         },
         "turkey": {
             "slug": "turkey",
             "name": "Turquie",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
         },
         "ukraine": {
             "slug": "ukraine",
             "name": "Ukraine",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"
         },
         "wales": {
             "slug": "wales",
             "name": "Pays de Galles",
-            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+            "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/Flag_of_Wales_2.svg"
         }
     },
     "games": {
