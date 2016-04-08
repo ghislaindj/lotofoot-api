@@ -2,6 +2,7 @@ import Promise from 'bluebird';
 import mongoose from 'mongoose';
 import httpStatus from 'http-status';
 import APIError from '../helpers/APIError';
+import bcrypt from 'bcrypt';
 
 /**
  * User Schema
@@ -22,12 +23,14 @@ const UserSchema = new mongoose.Schema({
         default: false
     },
     firstName: {
-        type: String
+        type: String,
+        required: true
     },
-    createdAt: {
-        type: Date,
-        default: Date.now
+    lastName: {
+        type: String
     }
+},{
+    timestamps: true
 });
 
 /**
@@ -37,10 +40,49 @@ const UserSchema = new mongoose.Schema({
  * - virtuals
  */
 
+UserSchema.pre('save', function(next) {
+    console.log("this", this);
+    let user = this;
+    if (user.isModified('password') || user.isNew) {
+        bcrypt.genSalt(10, function(err, salt) {
+            if (err) {
+                return next(err);
+            }
+            bcrypt.hash(user.password, salt, function(err, hash) {
+                if (err) {
+                    return next(err);
+                }
+                user.password = hash;
+                next();
+            });
+        });
+    } else {
+        return next();
+    }
+});
+
+
+UserSchema.set('toJSON', {
+    transform: function(doc, ret, options) {
+        var retJson = {
+            email: ret.email,
+            admin: ret.admin,
+            firstName: ret.firstName,
+            lastName: ret.lastName,
+            createdAt: ret.createdAt,
+            updatedAt: ret.updatedAt
+        };
+        return retJson;
+    }
+});
+
 /**
  * Methods
  */
 UserSchema.method({
+    verifyPassword(passwordToTest) {
+        return bcrypt.compareSync(passwordToTest, this.password);
+    }
 });
 
 /**
@@ -76,6 +118,23 @@ UserSchema.statics = {
             .skip(skip)
             .limit(limit)
             .execAsync();
+    },
+
+
+    /**
+     * FindbyEmail
+     * @param {ObjectId} email - The email of user.
+     * @returns {Promise<User, APIError>}
+     */
+    findByEmail(email) {
+        return this.findOne({email})
+            .execAsync().then((user) => {
+                if (user) {
+                    return user;
+                }
+                const err = new APIError('No such user exists!', httpStatus.NOT_FOUND);
+                return Promise.reject(err);
+            });
     }
 };
 

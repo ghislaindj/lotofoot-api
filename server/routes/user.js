@@ -2,12 +2,14 @@ import express from 'express';
 import validate from 'express-validation';
 import paramValidation from '../../config/param-validation';
 import userCtrl from '../controllers/user';
+import APIError from '../helpers/APIError';
+import ensureAuth from '../helpers/ensure-authenticated';
 
 const router = express.Router();
 
 router.route('/')
     /** GET /api/users - Get list of users */
-    .get(userCtrl.list)
+    .get(ensureAuth, userCtrl.list)
 
 router.route('/register')
     .post(validate(paramValidation.registerUser), userCtrl.register);

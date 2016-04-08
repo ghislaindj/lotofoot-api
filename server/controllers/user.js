@@ -1,4 +1,9 @@
 import User from '../models/user';
+import passport from 'passport';
+import APIError from '../helpers/APIError';
+import jwt from 'jwt-simple';
+import config from '../../config/env';
+import httpStatus from 'http-status';
 
 /**
  * Load user and append to req.
@@ -25,13 +30,46 @@ function get(req, res) {
  */
 function register(req, res, next) {
     const user = new User({
-        username: req.body.username,
+        email: req.body.email, 
+        password: req.body.password, 
+        firstName: req.body.firstName
     });
 
     user.saveAsync()
         .then((savedUser) => res.json(savedUser))
         .error((e) => next(e));
 }
+
+/**
+ * Login a user
+ * @property {string} req.body.username - The username of user.
+ * @returns {User}
+ */
+function login(req, res, next) {
+    User.findByEmail(req.body.email)
+    .then((user) => {
+        if (!user) {
+            const err = new APIError('Not found', httpStatus.NOT_FOUND);
+            next(err);
+        }
+
+        if (!user.verifyPassword(req.body.password)) {
+            const err = new APIError('Not authorize', httpStatus.UNAUTHORIZED);
+            next(err);
+        } else {
+            var token = jwt.encode({ userId: user.id}, config.secret);
+
+            res.json({
+              success: true,
+              user: user,
+              token: token
+            });
+        }
+    })
+    .error((e) => next(e));
+
+}
+
 
 /**
  * Get user list.
