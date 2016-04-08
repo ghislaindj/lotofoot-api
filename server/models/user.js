@@ -65,7 +65,7 @@ UserSchema.pre('save', function(next) {
 UserSchema.set('toJSON', {
     transform: function(doc, ret, options) {
         var retJson = {
-            id: ret.id,
+            _id: ret._id,
             email: ret.email,
             admin: ret.admin,
             firstName: ret.firstName,

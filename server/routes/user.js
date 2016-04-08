@@ -17,6 +17,9 @@ router.route('/register')
 router.route('/login')
     .post(validate(paramValidation.loginUser), userCtrl.login);
 
+router.route('/me')
+    .get(ensureAuth, userCtrl.getCurrentUser)
+
 router.route('/:userId')
     /** GET /api/users/:userId - Get user */
     .get(userCtrl.get)

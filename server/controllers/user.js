@@ -23,6 +23,19 @@ function get(req, res) {
     return res.json(req.user);
 }
 
+
+/**
+ * Get current user
+ * @returns {User}
+ */
+function getCurrentUser(req, res, next) {
+    console.log("req.user", req.user);
+    User.get(req.user.id).then((user) => {
+        req.user = user;
+        res.json(req.user);
+    }).error((e) => next(e));
+}
+
 /**
  * Create new user
  * @property {string} req.body.username - The username of user.
@@ -57,7 +70,7 @@ function login(req, res, next) {
             const err = new APIError('Not authorize', httpStatus.UNAUTHORIZED);
             next(err);
         } else {
-            var token = jwt.encode({ userId: user.id}, config.secret);
+            var token = jwt.encode({ id: user.id}, config.secret);
 
             res.json({
               success: true,
@@ -83,4 +96,4 @@ function list(req, res, next) {
         .error((e) => next(e));
 }
 
-export default { load, get, login, register, list};
+export default { load, get, login, register, list, getCurrentUser};
