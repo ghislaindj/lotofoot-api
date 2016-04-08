@@ -12,7 +12,7 @@ mongoose.connection.on('error', (error) => {
     throw new Error(`unable to connect to database: ${config.db} - ${error}`);
 });
 
-const debug = require('debug')('express-mongoose-es6-rest-api:index');
+const debug = require('debug')('lotofoot-api:index');
 
 // listen on port config.port
 app.listen(config.port, () => {

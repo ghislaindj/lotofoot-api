@@ -49,7 +49,14 @@ function register(req, res, next) {
     });
 
     user.saveAsync()
-        .then((savedUser) => res.json(savedUser))
+        .then((savedUser) => {
+            var token = jwt.encode({ id: savedUser.id}, config.secret);
+
+            res.json({
+              user: savedUser,
+              token: token
+            });
+        })
         .error((e) => next(e));
 }
 

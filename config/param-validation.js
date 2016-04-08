@@ -9,16 +9,24 @@ export default {
     },
     registerUser: {
         body: {
-                email: Joi.string().email().required(),
-                password: Joi.string().min(3).max(20).required(),
-                firstName: Joi.string().required(),
-                lastName: Joi.string()
+            email: Joi.string().email().required(),
+            password: Joi.string().min(3).max(20).required(),
+            firstName: Joi.string().required(),
+            lastName: Joi.string()
         }
     },
     loginUser: {
         body: {
-                email: Joi.string().email().required(),
-                password: Joi.string().min(3).max(20).required()
+            email: Joi.string().email().required(),
+            password: Joi.string().min(3).max(20).required()
+        }
+    },
+    createPrediction: {
+        body: {
+            game: Joi.required(),
+            scoreTeamA: Joi.number().integer().min(0).required(),
+            scoreTeamB: Joi.number().integer().min(0).required(),
+            winner: Joi.string().valid(['teamA', 'teamB', 'nobody']).required()
         }
     }
 
