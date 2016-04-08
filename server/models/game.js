@@ -47,20 +47,7 @@ const GameSchema = new mongoose.Schema({
         type: String
     }
 });
-// id: 1,
-//     phase: 0,
-//     group: 'a',
-//     date: '2016-06-10',
-//     time: '21h00',
-//     stadium: 'Saint-Denis',
-//     channel: 'tf1',
-//     teamA: 'France',
-//     teamB: 'Roumanie',
-//     goalA: -1,
-//     goalB: -1,
-//     winner: '',
-//     tme: -1,
-//     pda: -1
+
 /**
  * Add your
  * - pre-save hooks

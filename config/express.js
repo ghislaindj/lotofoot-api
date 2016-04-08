@@ -11,6 +11,7 @@ import winstonInstance from './winston';
 import routes from '../server/routes';
 import config from './env';
 import APIError from '../server/helpers/APIError';
+import passport from 'passport';
 
 const app = express();
 
@@ -31,6 +32,8 @@ app.disable('x-powered-by');
 // enable CORS - Cross Origin Resource Sharing
 app.use(cors());
 
+app.use(passport.initialize());
+
 // enable detailed API logging in dev env
 if (config.env === 'development') {
     expressWinston.requestWhitelist.push('body');
@@ -42,6 +45,8 @@ if (config.env === 'development') {
         colorStatus: true   // Color the status code (default green, 3XX cyan, 4XX yellow, 5XX red).
     }));
 }
+
+app.set('superSecret', config.secret);
 
 // mount all routes on /api path
 app.use('/api', routes);

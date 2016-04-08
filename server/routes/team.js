@@ -3,7 +3,7 @@ import validate from 'express-validation';
 import paramValidation from '../../config/param-validation';
 import teamCtrl from '../controllers/team';
 
-const router = express.Router();    // eslint-disable-line new-cap
+const router = express.Router(); 
 
 router.route('/')
     /** GET /api/teams - Get list of teams */

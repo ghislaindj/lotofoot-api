@@ -2,8 +2,9 @@ import express from 'express';
 import validate from 'express-validation';
 import paramValidation from '../../config/param-validation';
 import gameCtrl from '../controllers/game';
+import ensureAuth from '../helpers/ensure-authenticated';
 
-const router = express.Router();    // eslint-disable-line new-cap
+const router = express.Router();
 
 router.route('/')
     /** GET /api/games - Get list of games */
@@ -14,7 +15,7 @@ router.route('/')
 
 router.route('/:gameId')
     /** GET /api/games/:gameId - Get game */
-    .get(gameCtrl.get)
+    .get(ensureAuth,gameCtrl.get)
 
     // /** PUT /api/games/:gameId - Update game */
     // .put(validate(paramValidation.updategame), gameCtrl.update)
