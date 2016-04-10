@@ -28,6 +28,13 @@ export default {
             scoreTeamB: Joi.number().integer().min(0).required(),
             winner: Joi.string().valid(['teamA', 'teamB', 'nobody']).required()
         }
+    },
+    updatePrediction: {
+        body: {
+            scoreTeamA: Joi.number().integer().min(0),
+            scoreTeamB: Joi.number().integer().min(0),
+            winner: Joi.string().valid(['teamA', 'teamB', 'nobody'])
+        }
     }
 
     // // UPDATE /api/users/:userId

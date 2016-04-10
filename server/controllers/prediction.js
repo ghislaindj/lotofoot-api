@@ -39,6 +39,22 @@ function create(req, res, next) {
 }
 
 /**
+ * Update existing prediction
+ * @returns {Prediction}
+ */
+function update(req, res, next) {
+    const prediction = req.prediction;
+
+    prediction.scoreTeamA = req.body.scoreTeamA ? req.body.scoreTeamA : prediction.scoreTeamA;
+    prediction.scoreTeamB = req.body.scoreTeamB ? req.body.scoreTeamB : prediction.scoreTeamB;
+    prediction.winner = req.body.winner ? req.body.winner : prediction.winner;
+
+    prediction.saveAsync()
+        .then((savedPrediction) => res.json(savedPrediction))
+        .error((e) => next(e));
+}
+
+/**
  * Get prediction list.
  * @property {number} req.query.skip - Number of predictions to be skipped.
  * @property {number} req.query.limit - Limit number of predictions to be returned.
@@ -50,4 +66,4 @@ function list(req, res, next) {
         .error((e) => next(e));
 }
 
-export default { load, get, create, list};
+export default { load, get, create, update, list};

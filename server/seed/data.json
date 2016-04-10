@@ -127,6 +127,30 @@
     },
     "games": {
         "_model": "Game",
+        "-1":{
+            "friendlyId": 0,
+            "phase": 0,
+            "group": "a",
+            "date": "2016-04-10",
+            "time": "16:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Saint-Denis",
+            "channel": "tf1",
+            "teamA": "->teams.france",
+            "teamB": "->teams.romania"
+          },
+        "0":{
+            "friendlyId": 0,
+            "phase": 0,
+            "group": "a",
+            "date": "2016-04-08",
+            "time": "16:00",
+            "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+            "stadium": "Lens",
+            "channel": "tf1",
+            "teamA": "->teams.albania",
+            "teamB": "->teams.switzerland"
+        },
         "1":{
             "friendlyId": 1,
             "phase": 0,

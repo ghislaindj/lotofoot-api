@@ -18,7 +18,7 @@ router.route('/:predictionId')
     .get(ensureAuth,predictionCtrl.get)
 
     // /** PUT /api/predictions/:predictionId - Update prediction */
-    // .put(validate(paramValidation.updateprediction), predictionCtrl.update)
+    .put(validate(paramValidation.updatePrediction), predictionCtrl.update)
 
     // /** DELETE /api/predictions/:predictionId - Delete prediction */
     // .delete(predictionCtrl.remove);
