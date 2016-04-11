@@ -26,6 +26,9 @@ const PredictionSchema = new mongoose.Schema({
         winner: {
             type: String,
             enum: ['teamA', 'teamB', 'nobody']
+        },
+        score: {
+            type: Number
         }
     }, {
         timestamps: true
@@ -40,6 +43,27 @@ PredictionSchema.index({ game: 1, user: 1 }, { unique: true });
  * - validations
  * - virtuals
  */
+
+PredictionSchema.virtual('isOpen').get(function() {
+    return !(this.game && this.game.hasStarted);
+});
+
+PredictionSchema.set('toJSON', {
+    virtuals: true,
+    transform: function(doc, ret, options) {
+        var retJson = {
+            _id: ret._id,
+            scoreTeamA: ret.scoreTeamA,
+            scoreTeamB: ret.scoreTeamB,
+            winner: ret.winner,
+            game: ret.game,
+            isOpen: ret.isOpen,
+            createdAt: ret.createdAt,
+            updatedAt: ret.updatedAt
+        };
+        return retJson;
+    }
+});
 
 /**
  * Methods
@@ -58,6 +82,7 @@ PredictionSchema.statics = {
      */
     get(id) {
         return this.findById(id)
+            .populate('game')
             .execAsync().then((prediction) => {
                 if (prediction) {
                     return prediction;
@@ -82,6 +107,7 @@ PredictionSchema.statics = {
             .sort({ datetime: 1 })
             .skip(skip)
             .limit(limit)
+            .populate('game')
             .execAsync();
     }
 };

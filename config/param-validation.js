@@ -2,9 +2,12 @@ import Joi from 'joi';
 
 export default {
     // // POST /api/games
-    createGame: {
+    updateGame: {
         body: {
-            gamename: Joi.string().required()
+            scoreTeamA: Joi.number().integer().min(0),
+            scoreTeamB: Joi.number().integer().min(0),
+            winner: Joi.string().valid(['teamA', 'teamB', 'nobody']),
+            status: Joi.string().valid(['NOT_STARTED', 'IN_PROGRESS', 'FINISHED'])
         }
     },
     registerUser: {

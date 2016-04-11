@@ -20,15 +20,27 @@ function get(req, res) {
 }
 
 /**
- * Create new game
- * @property {string} req.body.gamename - The gamename of game.
- * @property {string} req.body.mobileNumber - The mobileNumber of game.
+ * Load next or current games
+* @property {number} req.query.limit - Limit number of games to be returned.
+ */
+function next(req, res) {
+    const { limit = 3 } = req.query;
+    Game.next({ limit }).then((games) =>  res.json(games))
+        .error((e) => next(e));
+}
+
+
+/**
+ * Update existing game
  * @returns {Game}
  */
-function create(req, res, next) {
-    const game = new Game({
-        gamename: req.body.gamename,
-    });
+function update(req, res, next) {
+    const game = req.game;
+
+    game.scoreTeamA = req.body.scoreTeamA ? req.body.scoreTeamA : game.scoreTeamA;
+    game.scoreTeamB = req.body.scoreTeamB ? req.body.scoreTeamB : game.scoreTeamB;
+    game.winner = req.body.winner ? req.body.winner : game.winner;
+    game.status = req.body.status ? req.body.status : game.status;
 
     game.saveAsync()
         .then((savedGame) => res.json(savedGame))
@@ -47,4 +59,4 @@ function list(req, res, next) {
         .error((e) => next(e));
 }
 
-export default { load, get, create, list};
+export default { load, get, list, update, next};

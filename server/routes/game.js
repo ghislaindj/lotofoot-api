@@ -10,18 +10,17 @@ router.route('/')
     /** GET /api/games - Get list of games */
     .get(gameCtrl.list)
 
-    /** POST /api/games - Create new game */
-    .post(validate(paramValidation.createGame), gameCtrl.create);
+router.route('/next')
+    /** GET /api/games/next - Get next or current game */
+    .get(gameCtrl.next);
+
 
 router.route('/:gameId')
     /** GET /api/games/:gameId - Get game */
-    .get(ensureAuth,gameCtrl.get)
+    .get(gameCtrl.get)
 
     // /** PUT /api/games/:gameId - Update game */
-    // .put(validate(paramValidation.updategame), gameCtrl.update)
-
-    // /** DELETE /api/games/:gameId - Delete game */
-    // .delete(gameCtrl.remove);
+    .put(ensureAuth, validate(paramValidation.updateGame), gameCtrl.update)
 
 /** Load game when API with gameId route parameter is hit */
 router.param('gameId', gameCtrl.load);
