@@ -2,6 +2,8 @@ import Promise from 'bluebird';
 import mongoose from 'mongoose';
 import httpStatus from 'http-status';
 import APIError from '../helpers/APIError';
+import Game from './game';
+import User from './user';
 
 /**
  * Prediction Schema
@@ -58,6 +60,7 @@ PredictionSchema.set('toJSON', {
             winner: ret.winner,
             game: ret.game,
             isOpen: ret.isOpen,
+            score: ret.score,
             createdAt: ret.createdAt,
             updatedAt: ret.updatedAt
         };
@@ -65,10 +68,51 @@ PredictionSchema.set('toJSON', {
     }
 });
 
+    /**
+     * Calculate score
+     */
+PredictionSchema.pre('save', function(next) {
+    let prediction = this;
+    prediction.getScoreFromGame()
+        .then((score) => {
+            prediction.score = score;
+            next();
+        })
+});
+
+PredictionSchema.post('save', function(prediction) {
+    return User.get(prediction.user)
+        .then((user) => {
+            return user.saveAsync();
+        })
+});
+
+
 /**
  * Methods
  */
 PredictionSchema.method({
+    getScoreFromGame() {
+        var prediction = this;
+        let score = 0;
+        return Game.get(this.game)
+            .then((game) => {
+                if(game.winner == prediction.winner) {
+                    score = score + 1;
+                    if((game.scoreTeamA - game.scoreTeamB) == (prediction.scoreTeamA - prediction.scoreTeamB)) {
+                        score = score + 1;
+                    }
+
+                    if((game.scoreTeamA == prediction.scoreTeamA) && (game.scoreTeamB == prediction.scoreTeamB)) {
+                        score = score + 1;
+                    }
+                } else {
+                    score = 0;
+                }
+
+                return score;
+            })
+    }
 });
 
 /**

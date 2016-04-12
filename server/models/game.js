@@ -3,6 +3,8 @@ import mongoose from 'mongoose';
 import httpStatus from 'http-status';
 import APIError from '../helpers/APIError';
 import moment from 'moment';
+import Prediction from './prediction';
+import _ from 'lodash';
 
 /**
  * Game Schema
@@ -79,7 +81,13 @@ GameSchema.virtual('hasStarted').get(function() {
 });
 
 GameSchema.post('save', function(game) {
-    console.log('%s has been saved', game._id);
+    return Prediction.find({game: game})
+        .execAsync()
+        .then((predictions) => {
+            return Promise.all(_.map(predictions, (prediction) => {
+                return prediction.saveAsync();
+            }));
+        })
 });
 
 
@@ -97,7 +105,6 @@ GameSchema.set('toJSON', {
             _id: ret._id,
             friendlyId: ret.friendlyId,
             phase: ret.phase,
-            //date: ret.date,
             datetime: ret.datetime,
             stadium: ret.stadium,
             teamA: ret.teamA,
@@ -167,6 +174,8 @@ GameSchema.statics = {
             .populate('teamA teamB')
             .execAsync();
     }
+
+
 };
 
 /**

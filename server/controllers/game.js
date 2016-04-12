@@ -1,5 +1,6 @@
 import Game from '../models/game';
 import Team from '../models/team';
+import _ from 'lodash';
 
 /**
  * Load game and append to req.
@@ -37,10 +38,11 @@ function next(req, res) {
 function update(req, res, next) {
     const game = req.game;
 
-    game.scoreTeamA = req.body.scoreTeamA ? req.body.scoreTeamA : game.scoreTeamA;
-    game.scoreTeamB = req.body.scoreTeamB ? req.body.scoreTeamB : game.scoreTeamB;
-    game.winner = req.body.winner ? req.body.winner : game.winner;
-    game.status = req.body.status ? req.body.status : game.status;
+    game.scoreTeamA = !_.isUndefined(req.body.scoreTeamA) ? req.body.scoreTeamA : game.scoreTeamA;
+    game.scoreTeamB = !_.isUndefined(req.body.scoreTeamB) ? req.body.scoreTeamB : game.scoreTeamB;
+    game.winner = !_.isUndefined(req.body.winner) ? req.body.winner : game.winner;
+    game.status = !_.isUndefined(req.body.status) ? req.body.status : game.status;
+
 
     game.saveAsync()
         .then((savedGame) => res.json(savedGame))

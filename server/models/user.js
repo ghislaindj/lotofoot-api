@@ -3,6 +3,8 @@ import mongoose from 'mongoose';
 import httpStatus from 'http-status';
 import APIError from '../helpers/APIError';
 import bcrypt from 'bcrypt';
+import Prediction from './prediction';
+import _ from 'lodash';
 
 /**
  * User Schema
@@ -28,10 +30,16 @@ const UserSchema = new mongoose.Schema({
     },
     lastName: {
         type: String
+    },
+    points: {
+        type: Number,
+        default: 0
     }
 },{
     timestamps: true
 });
+
+UserSchema.index({ points: 1});
 
 /**
  * Add your
@@ -41,28 +49,32 @@ const UserSchema = new mongoose.Schema({
  */
 
 UserSchema.pre('save', function(next) {
-    console.log("this", this);
     let user = this;
-    if (user.isModified('password') || user.isNew) {
-        bcrypt.genSalt(10, function(err, salt) {
-            if (err) {
-                return next(err);
-            }
-            bcrypt.hash(user.password, salt, function(err, hash) {
+    user.getPoints()
+    .then((points) => {
+        user.points = points;
+        if (user.isModified('password') || user.isNew) {
+            bcrypt.genSalt(10, function(err, salt) {
                 if (err) {
                     return next(err);
                 }
-                user.password = hash;
-                next();
+                bcrypt.hash(user.password, salt, function(err, hash) {
+                    if (err) {
+                        return next(err);
+                    }
+                    user.password = hash;
+                    next();
+                });
             });
-        });
-    } else {
-        return next();
-    }
+        } else {
+            return next();
+        }
+    })
 });
 
 
 UserSchema.set('toJSON', {
+    virtuals: true,
     transform: function(doc, ret, options) {
         var retJson = {
             _id: ret._id,
@@ -70,6 +82,7 @@ UserSchema.set('toJSON', {
             admin: ret.admin,
             firstName: ret.firstName,
             lastName: ret.lastName,
+            points: ret.points,
             createdAt: ret.createdAt,
             updatedAt: ret.updatedAt
         };
@@ -83,6 +96,17 @@ UserSchema.set('toJSON', {
 UserSchema.method({
     verifyPassword(passwordToTest) {
         return bcrypt.compareSync(passwordToTest, this.password);
+    },
+
+    getPoints() {
+        var user = this;
+        return Prediction.find({user: user})
+        .execAsync().then((predictions) => {
+            return _.reduce(predictions, (sum, prediction) => {
+                console.log("hhhhherrrreee", sum, prediction.score);
+                return sum + prediction.score;
+            }, 0);
+        })
     }
 });
 
@@ -115,7 +139,7 @@ UserSchema.statics = {
      */
     list({ skip = 0, limit = 50 } = {}) {
         return this.find()
-            .sort({ name: 1 })
+            .sort({ points: -1 })
             .skip(skip)
             .limit(limit)
             .execAsync();

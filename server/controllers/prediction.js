@@ -1,4 +1,5 @@
 import Prediction from '../models/prediction';
+import _ from 'lodash';
 
 /**
  * Load prediction and append to req.
@@ -45,9 +46,9 @@ function create(req, res, next) {
 function update(req, res, next) {
     const prediction = req.prediction;
 
-    prediction.scoreTeamA = req.body.scoreTeamA ? req.body.scoreTeamA : prediction.scoreTeamA;
-    prediction.scoreTeamB = req.body.scoreTeamB ? req.body.scoreTeamB : prediction.scoreTeamB;
-    prediction.winner = req.body.winner ? req.body.winner : prediction.winner;
+    prediction.scoreTeamA = !_.isUndefined(req.body.scoreTeamA) ? req.body.scoreTeamA : prediction.scoreTeamA;
+    prediction.scoreTeamB = !_.isUndefined(req.body.scoreTeamB) ? req.body.scoreTeamB : prediction.scoreTeamB;
+    prediction.winner = !_.isUndefined(req.body.winner) ? req.body.winner : prediction.winner;
 
     prediction.saveAsync()
         .then((savedPrediction) => res.json(savedPrediction))
