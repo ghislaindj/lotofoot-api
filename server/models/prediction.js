@@ -102,7 +102,6 @@ PredictionSchema.method({
                     if((game.scoreTeamA - game.scoreTeamB) == (prediction.scoreTeamA - prediction.scoreTeamB)) {
                         score = score + 1;
                     }
-
                     if((game.scoreTeamA == prediction.scoreTeamA) && (game.scoreTeamB == prediction.scoreTeamB)) {
                         score = score + 1;
                     }

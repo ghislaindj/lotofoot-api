@@ -5,6 +5,7 @@ import APIError from '../helpers/APIError';
 import moment from 'moment';
 import Prediction from './prediction';
 import _ from 'lodash';
+import getScoreFromFootDB from '../helpers/football-db-update';
 
 /**
  * Game Schema
@@ -63,6 +64,9 @@ const GameSchema = new mongoose.Schema({
     },
     channel: {
         type: String
+    },
+    footDbUrl: {
+        type: String
     }
 }, {
         timestamps: true
@@ -81,6 +85,7 @@ GameSchema.virtual('hasStarted').get(function() {
 });
 
 GameSchema.post('save', function(game) {
+    console.log("game %s has been saved", game._id);
     return Prediction.find({game: game})
         .execAsync()
         .then((predictions) => {
@@ -95,7 +100,19 @@ GameSchema.post('save', function(game) {
  * Methods
  */
 GameSchema.method({
+    updateScoreFromFootDb() {
+        return getScoreFromFootDB(this)
+            .then((score) => {
+                if(_.isUndefined(score)) return;
 
+                if(score.scoreTeamA)    this.scoreTeamA = score.scoreTeamA;
+                if(score.scoreTeamB)    this.scoreTeamB = score.scoreTeamB;
+                if(score.winner)        this.winner     = score.winner;
+                if(score.status)        this.status     = score.status;
+
+                return this.saveAsync();
+            })
+    }
 });
 
 GameSchema.set('toJSON', {
@@ -154,6 +171,20 @@ GameSchema.statics = {
     next({ limit = 3 }) {
         const beginning = moment().startOf('day');
         return this.find({"datetime": {$gte: beginning}, "status": {$ne: ["FINISHED"]}})
+            .sort({ datetime: 1 })
+            .limit(limit)
+            .populate('teamA teamB')
+            .execAsync();
+    },
+
+    /**
+     * Get today games
+     * @param {ObjectId} id - The objectId of game.
+     * @returns {Promise<Game, APIError>}
+     */
+    today({ limit = 3 }) {
+        const beginning = moment().startOf('day');
+        return this.find({"datetime": {$gte: beginning}})
             .sort({ datetime: 1 })
             .limit(limit)
             .populate('teamA teamB')
