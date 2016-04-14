@@ -103,7 +103,6 @@ UserSchema.method({
         return Prediction.find({user: user})
         .execAsync().then((predictions) => {
             return _.reduce(predictions, (sum, prediction) => {
-                console.log("hhhhherrrreee", sum, prediction.score);
                 return sum + prediction.score;
             }, 0);
         })

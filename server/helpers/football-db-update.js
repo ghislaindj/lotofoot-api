@@ -1,6 +1,7 @@
 import Promise from 'bluebird';
 import request from 'superagent-bluebird-promise';
 import config from '../../config/env';
+import _ from 'lodash';
 
 Promise.promisifyAll(request);
 
@@ -16,8 +17,8 @@ export default function(game) {
 
             if(fixture.status == 'FINISHED') score.status = 'FINISHED';
 
-            if(fixture.result.goalsHomeTeam) score.scoreTeamA = parseInt(fixture.result.goalsHomeTeam);
-            if(fixture.result.goalsAwayTeam) score.scoreTeamB = parseInt(fixture.result.goalsAwayTeam);
+            if(!_.isUndefined(fixture.result.goalsHomeTeam)) score.scoreTeamA = parseInt(fixture.result.goalsHomeTeam);
+            if(!_.isUndefined(fixture.result.goalsAwayTeam)) score.scoreTeamB = parseInt(fixture.result.goalsAwayTeam);
 
             if(score.scoreTeamA && score.scoreTeamB) {
                 if((score.scoreTeamA - score.scoreTeamB) > 0) {
@@ -28,7 +29,8 @@ export default function(game) {
                     score.winner = "nobody";
                 }
             }
-
+            console.log("fixture", fixture);
+            console.log("score ?", score);
             return score;
         })
         .catch((e) => {

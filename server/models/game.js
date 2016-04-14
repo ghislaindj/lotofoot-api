@@ -44,8 +44,8 @@ const GameSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ['NOT_STARTED', 'IN_PROGRESS', 'FINISHED'],
-        default: 'NOT_STARTED'
+        enum: ['TIMED', 'IN_PROGRESS', 'FINISHED'],
+        default: 'TIMED'
     },
     futureTeamA: {
         type: String
@@ -86,12 +86,17 @@ GameSchema.virtual('hasStarted').get(function() {
 
 GameSchema.post('save', function(game) {
     console.log("game %s has been saved", game._id);
+        //console.log("Prediction", Prediction.find({game: game}));
+
     return Prediction.find({game: game})
         .execAsync()
         .then((predictions) => {
             return Promise.all(_.map(predictions, (prediction) => {
                 return prediction.saveAsync();
             }));
+        })
+        .catch((e) => {
+            console.log("error", e);
         })
 });
 
@@ -103,13 +108,15 @@ GameSchema.method({
     updateScoreFromFootDb() {
         return getScoreFromFootDB(this)
             .then((score) => {
+                                console.log("score updated", score);
+
                 if(_.isUndefined(score)) return;
 
-                if(score.scoreTeamA)    this.scoreTeamA = score.scoreTeamA;
-                if(score.scoreTeamB)    this.scoreTeamB = score.scoreTeamB;
-                if(score.winner)        this.winner     = score.winner;
-                if(score.status)        this.status     = score.status;
-
+                _.assign(this, score);
+                // if(score.scoreTeamA)    this.scoreTeamA = score.scoreTeamA;
+                // if(score.scoreTeamB)    this.scoreTeamB = score.scoreTeamB;
+                // if(score.winner)        this.winner     = score.winner;
+                // if(score.status)        this.status     = score.status;
                 return this.saveAsync();
             })
     }
@@ -183,7 +190,7 @@ GameSchema.statics = {
      * @returns {Promise<Game, APIError>}
      */
     today({ limit = 3 }) {
-        const beginning = moment().startOf('day');
+        const beginning = moment().subtract(1, 'day').startOf('day');
         return this.find({"datetime": {$gte: beginning}})
             .sort({ datetime: 1 })
             .limit(limit)

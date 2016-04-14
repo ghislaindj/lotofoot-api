@@ -137,7 +137,8 @@
             "stadium": "Saint-Denis",
             "channel": "tf1",
             "teamA": "->teams.france",
-            "teamB": "->teams.romania"
+            "teamB": "->teams.romania",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149855"
           },
         "2":{
             "friendlyId": 2,
@@ -149,7 +150,8 @@
             "stadium": "Lens",
             "channel": "tf1",
             "teamA": "->teams.albania",
-            "teamB": "->teams.switzerland"
+            "teamB": "->teams.switzerland",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149885"
           },
         "3":{
             "friendlyId": 3,
@@ -161,7 +163,8 @@
             "stadium": "Bordeaux",
             "channel": "",
             "teamA": "->teams.wales",
-            "teamB": "->teams.slovakia"
+            "teamB": "->teams.slovakia",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149861"
           },
         "4":{
             "friendlyId": 4,
@@ -173,7 +176,8 @@
             "stadium": "Marseille",
             "channel": "m6",
             "teamA": "->teams.england",
-            "teamB": "->teams.russia"
+            "teamB": "->teams.russia",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149860"
           },
         "5":{
             "friendlyId": 5,
@@ -185,7 +189,8 @@
             "stadium": "Paris",
             "channel": "tf1",
             "teamA": "->teams.turkey",
-            "teamB": "->teams.croatia"
+            "teamB": "->teams.croatia",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149873"
           },
         "6":{
             "friendlyId": 6,
@@ -197,7 +202,8 @@
             "stadium": "Nice",
             "channel": "",
             "teamA": "->teams.poland",
-            "teamB": "->teams.northern-ireland"
+            "teamB": "->teams.northern-ireland",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149867"
           },
         "7":{
             "friendlyId": 7,
@@ -209,7 +215,8 @@
             "stadium": "Lille",
             "channel": "tf1",
             "teamA": "->teams.germany",
-            "teamB": "->teams.ukraine"
+            "teamB": "->teams.ukraine",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149866"
           },
         "8":{
             "friendlyId": 8,
@@ -221,7 +228,8 @@
             "stadium": "Toulouse",
             "channel": "",
             "teamA": "->teams.spain",
-            "teamB": "->teams.czech-republic"
+            "teamB": "->teams.czech-republic",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149872"
           },
         "9":{
             "friendlyId": 9,
@@ -233,7 +241,8 @@
             "stadium": "Saint-Etienne",
             "channel": "",
             "teamA": "->teams.ireland",
-            "teamB": "->teams.sweden"
+            "teamB": "->teams.sweden",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149879"
           },
         "10":{
             "friendlyId": 10,
@@ -245,7 +254,8 @@
             "stadium": "Lyon",
             "channel": "m6",
             "teamA": "->teams.belgium",
-            "teamB": "->teams.italy"
+            "teamB": "->teams.italy",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149878"
           },
         "11":{
             "friendlyId": 11,
@@ -257,7 +267,8 @@
             "stadium": "Bordeaux",
             "channel": "",
             "teamA": "->teams.austria",
-            "teamB": "->teams.hungary"
+            "teamB": "->teams.hungary",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149882"
           },
         "12":{
             "friendlyId": 12,
@@ -269,7 +280,8 @@
             "stadium": "Saint-Etienne",
             "channel": "",
             "teamA": "->teams.portugal",
-            "teamB": "->teams.iceland"
+            "teamB": "->teams.iceland",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149888"
           },
         "13":{
             "friendlyId": 13,
@@ -281,7 +293,8 @@
             "stadium": "Lille",
             "channel": "",
             "teamA": "->teams.russia",
-            "teamB": "->teams.slovakia"
+            "teamB": "->teams.slovakia",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149859"
           },
         "14":{
             "friendlyId": 14,
@@ -293,7 +306,8 @@
             "stadium": "Paris",
             "channel": "tf1",
             "teamA": "->teams.romania",
-            "teamB": "->teams.switzerland"
+            "teamB": "->teams.switzerland",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149854"
           },
         "15":{
             "friendlyId": 15,
@@ -305,7 +319,8 @@
             "stadium": "Marseille",
             "channel": "tf1",
             "teamA": "->teams.france",
-            "teamB": "->teams.albania"
+            "teamB": "->teams.albania",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149884"
           },
         "16":{
             "friendlyId": 16,
@@ -317,7 +332,8 @@
             "stadium": "Lens",
             "channel": "",
             "teamA": "->teams.england",
-            "teamB": "->teams.wales"
+            "teamB": "->teams.wales",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149858"
           },
         "17":{
             "friendlyId": 17,
@@ -329,7 +345,8 @@
             "stadium": "Lyon",
             "channel": "",
             "teamA": "->teams.ukraine",
-            "teamB": "->teams.northern-ireland"
+            "teamB": "->teams.northern-ireland",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149865"
           },
         "18":{
             "friendlyId": 18,
@@ -341,7 +358,8 @@
             "stadium": "Saint-Denis",
             "channel": "m6",
             "teamA": "->teams.germany",
-            "teamB": "->teams.poland"
+            "teamB": "->teams.poland",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149864"
           },
         "19":{
             "friendlyId": 19,
@@ -353,7 +371,8 @@
             "stadium": "Toulouse",
             "channel": "tf1",
             "teamA": "->teams.italy",
-            "teamB": "->teams.sweden"
+            "teamB": "->teams.sweden",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149877"
           },
         "20":{
             "friendlyId": 20,
@@ -365,7 +384,8 @@
             "stadium": "Saint-Etiennes",
             "channel": "",
             "teamA": "->teams.czech-republic",
-            "teamB": "->teams.croatia"
+            "teamB": "->teams.croatia",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149871"
           },
         "21":{
             "friendlyId": 21,
@@ -377,7 +397,8 @@
             "stadium": "Nice",
             "channel": "m6",
             "teamA": "->teams.spain",
-            "teamB": "->teams.turkey"
+            "teamB": "->teams.turkey",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149870"
           },
         "22":{
             "friendlyId": 22,
@@ -389,7 +410,8 @@
             "stadium": "Bordeaux",
             "channel": "tf1",
             "teamA": "->teams.belgium",
-            "teamB": "->teams.ireland"
+            "teamB": "->teams.ireland",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149876"
           },
         "23":{
             "friendlyId": 23,
@@ -401,7 +423,8 @@
             "stadium": "Marseille",
             "channel": "",
             "teamA": "->teams.iceland",
-            "teamB": "->teams.hungary"
+            "teamB": "->teams.hungary",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149887"
           },
         "24":{
             "friendlyId": 24,
@@ -413,7 +436,8 @@
             "stadium": "Paris",
             "channel": "tf1",
             "teamA": "->teams.portugal",
-            "teamB": "->teams.austria"
+            "teamB": "->teams.austria",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149881"
           },
         "25":{
             "friendlyId": 25,
@@ -425,7 +449,8 @@
             "stadium": "Lyon",
             "channel": "m6",
             "teamA": "->teams.romania",
-            "teamB": "->teams.albania"
+            "teamB": "->teams.albania",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149883"
           },
         "26":{
             "friendlyId": 26,
@@ -437,7 +462,8 @@
             "stadium": "Lille",
             "channel": "",
             "teamA": "->teams.switzerland",
-            "teamB": "->teams.france"
+            "teamB": "->teams.france",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149853"
           },
         "27":{
             "friendlyId": 27,
@@ -449,7 +475,8 @@
             "stadium": "Toulouse",
             "channel": "tf1",
             "teamA": "->teams.russia",
-            "teamB": "->teams.wales"
+            "teamB": "->teams.wales",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149856"
           },
         "28":{
             "friendlyId": 28,
@@ -461,7 +488,8 @@
             "stadium": "Saint-Etienne",
             "channel": "",
             "teamA": "->teams.slovakia",
-            "teamB": "->teams.england"
+            "teamB": "->teams.england",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149857"
           },
         "29":{
             "friendlyId": 29,
@@ -473,7 +501,8 @@
             "stadium": "Marseille",
             "channel": "",
             "teamA": "->teams.ukraine",
-            "teamB": "->teams.poland"
+            "teamB": "->teams.poland",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149863"
           },
         "30":{
             "friendlyId": 30,
@@ -485,7 +514,8 @@
             "stadium": "Paris",
             "channel": "",
             "teamA": "->teams.northern-ireland",
-            "teamB": "->teams.germany"
+            "teamB": "->teams.germany",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149862"
           },
         "31":{
             "friendlyId": 31,
@@ -497,7 +527,8 @@
             "stadium": "Lens",
             "channel": "tf1",
             "teamA": "->teams.czech-republic",
-            "teamB": "->teams.turkey"
+            "teamB": "->teams.turkey",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149869"
           },
         "32":{
             "friendlyId": 32,
@@ -509,7 +540,8 @@
             "stadium": "Bordeaux",
             "channel": "",
             "teamA": "->teams.croatia",
-            "teamB": "->teams.spain"
+            "teamB": "->teams.spain",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149868"
           },
         "33":{
             "friendlyId": 33,
@@ -521,7 +553,8 @@
             "stadium": "Saint-Denis",
             "channel": "",
             "teamA": "->teams.iceland",
-            "teamB": "->teams.austria"
+            "teamB": "->teams.austria",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149886"
           },
         "34":{
             "friendlyId": 34,
@@ -533,7 +566,8 @@
             "stadium": "Lyon",
             "channel": "",
             "teamA": "->teams.hungary",
-            "teamB": "->teams.portugal"
+            "teamB": "->teams.portugal",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149880"
           },
         "35":{
             "friendlyId": 35,
@@ -545,7 +579,8 @@
             "stadium": "Lille",
             "channel": "m6",
             "teamA": "->teams.italy",
-            "teamB": "->teams.ireland"
+            "teamB": "->teams.ireland",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149874"
           },
         "36":{
             "friendlyId": 36,
@@ -557,7 +592,8 @@
             "stadium": "Nice",
             "channel": "",
             "teamA": "->teams.sweden",
-            "teamB": "->teams.belgium"
+            "teamB": "->teams.belgium",
+            "footDbUrl": "http://api.football-data.org/v1/fixtures/149875"
           },
         "37":{
             "friendlyId": 37,
