@@ -20,7 +20,7 @@ export default function(game) {
             if(!_.isUndefined(fixture.result.goalsHomeTeam)) score.scoreTeamA = parseInt(fixture.result.goalsHomeTeam);
             if(!_.isUndefined(fixture.result.goalsAwayTeam)) score.scoreTeamB = parseInt(fixture.result.goalsAwayTeam);
 
-            if(score.scoreTeamA && score.scoreTeamB) {
+            if(!_.isUndefined(score.scoreTeamA) && !_.isUndefined(score.scoreTeamB)) {
                 if((score.scoreTeamA - score.scoreTeamB) > 0) {
                     score.winner = "teamA";
                 } else if ((score.scoreTeamA - score.scoreTeamB) < 0) {

@@ -59,6 +59,7 @@ PredictionSchema.set('toJSON', {
             scoreTeamB: ret.scoreTeamB,
             winner: ret.winner,
             game: ret.game,
+            user: ret.user,
             isOpen: ret.isOpen,
             score: ret.score,
             createdAt: ret.createdAt,

@@ -113,15 +113,12 @@ GameSchema.method({
     updateScoreFromFootDb() {
         return getScoreFromFootDB(this)
             .then((score) => {
-                                console.log("score updated", score);
+                console.log("score updated", score);
 
                 if(_.isUndefined(score)) return;
 
                 _.assign(this, score);
-                // if(score.scoreTeamA)    this.scoreTeamA = score.scoreTeamA;
-                // if(score.scoreTeamB)    this.scoreTeamB = score.scoreTeamB;
-                // if(score.winner)        this.winner     = score.winner;
-                // if(score.status)        this.status     = score.status;
+
                 return this.saveAsync();
             })
     }
