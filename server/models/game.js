@@ -80,8 +80,13 @@ const GameSchema = new mongoose.Schema({
  * - virtuals
  */
 
-GameSchema.virtual('hasStarted').get(function() {
-    return new Date() > this.datetime;
+GameSchema.virtual('currentStatus').get(function() {
+    if(this.status == 'FINISHED') return 'FINISHED';
+    if (new Date() > this.datetime) {
+        return 'IN_PROGRESS';
+    } else {
+        return 'TIMED';
+    }
 });
 
 GameSchema.post('save', function(game) {
@@ -136,7 +141,7 @@ GameSchema.set('toJSON', {
             scoreTeamA: ret.scoreTeamA,
             scoreTeamB: ret.scoreTeamB,
             winner: ret.winner,
-            status: ret.status,
+            status: ret.currentStatus,
             futureTeamA: ret.futureTeamA,
             futureTeamB: ret.futureTeamB,
             channel: ret.channel,
