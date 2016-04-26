@@ -4,6 +4,11 @@ import seeder from 'mongoose-seeder';
 import data from './server/seed/data.json';
 import Game from './server/models/game';
 import Team from './server/models/team';
+import Promise from 'bluebird';
+
+
+// promisify mongoose
+Promise.promisifyAll(mongoose);
 
 mongoose.connect(config.db, { server: { socketOptions: { keepAlive: 1 } } });
 mongoose.connection.on('error', (error) => {
