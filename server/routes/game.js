@@ -2,7 +2,7 @@ import express from 'express';
 import validate from 'express-validation';
 import paramValidation from '../../config/param-validation';
 import gameCtrl from '../controllers/game';
-import ensureAuth from '../helpers/ensure-authenticated';
+import auth from '../helpers/auth';
 
 const router = express.Router();
 
@@ -20,7 +20,7 @@ router.route('/:gameId')
     .get(gameCtrl.get)
 
     // /** PUT /api/games/:gameId - Update game */
-    .put(ensureAuth, validate(paramValidation.updateGame), gameCtrl.update)
+    .put(auth.ensureAuth, validate(paramValidation.updateGame), gameCtrl.update)
 
 /** Load game when API with gameId route parameter is hit */
 router.param('gameId', gameCtrl.load);
