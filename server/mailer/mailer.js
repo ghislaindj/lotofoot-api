@@ -20,7 +20,7 @@ function send(toEmail, subject, body) {
 
 function sendPasswordResetEmail(user, accessToken) {
     const subject = `⚽️🏆 ${user.firstName}, on a oublié son mot de passe ?`
-    const body = `Il suffit de cliquer sur ce lien pour le récupérer : ${config.webUrl}/${accessToken}`;
+    const body = `Il suffit de cliquer sur ce lien pour le récupérer : ${config.webUrl}/recover/${accessToken}`;
     return send(user.email, subject, body);
 }
 
