@@ -148,7 +148,7 @@ PredictionSchema.statics = {
         if(user) filters.user = user;
 
         return this.find(filters)
-            .sort({ datetime: 1 })
+            .sort({ updatedAt: -1 })
             .skip(skip)
             .limit(limit)
             .populate('game')

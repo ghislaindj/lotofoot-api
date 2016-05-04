@@ -48,6 +48,11 @@ export default {
         body: {
             password: Joi.string().min(3).max(20).required()
         }
+    },
+    createMessage: {
+        body: {
+            text: Joi.string().required()
+        }
     }
 
     // // UPDATE /api/users/:userId
