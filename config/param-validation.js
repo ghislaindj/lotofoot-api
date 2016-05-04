@@ -38,6 +38,16 @@ export default {
             scoreTeamB: Joi.number().integer().min(0),
             winner: Joi.string().valid(['teamA', 'teamB', 'nobody'])
         }
+    },
+    resetPasswordCreate: {
+        body: {
+            email: Joi.string().email().required()
+        }
+    },
+    resetPasswordUpdate: {
+        body: {
+            password: Joi.string().min(3).max(20).required()
+        }
     }
 
     // // UPDATE /api/users/:userId

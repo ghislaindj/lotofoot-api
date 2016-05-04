@@ -14,10 +14,6 @@ const GameSchema = new mongoose.Schema({
     friendlyId: {
         type: Number
     },
-    createdAt: {
-        type: Date,
-        default: Date.now
-    },
     date: {
         type: String
     },
@@ -91,7 +87,6 @@ GameSchema.virtual('currentStatus').get(function() {
 
 GameSchema.post('save', function(game) {
     console.log("game %s has been saved", game._id);
-        //console.log("Prediction", Prediction.find({game: game}));
 
     return Prediction.find({game: game})
         .execAsync()
@@ -121,6 +116,16 @@ GameSchema.method({
 
                 return this.saveAsync();
             })
+    },
+    hasBeenPredictedBy(userId) {
+        return Prediction.findOne({game: this._id, user: userId})
+            .execAsync().then(function(prediction) {
+                if(prediction) {
+                    return true;
+                } else {
+                    return false;
+                }
+            });
     }
 });
 

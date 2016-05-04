@@ -7,7 +7,16 @@ const config = {
     port: process.env.PORT || 3000,
     env: process.env.NODE_ENV || 'development',
     secret: process.env.SECRET_TOKEN,
-    footballDataKey: process.env.FOOTBALL_DATA_KEY
+    footballDataKey: process.env.FOOTBALL_DATA_KEY,
+    mailer: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+        port: process.env.SMTP_PORT,
+        host: process.env.SMTP_HOST,
+        defaultFromAddress: '⚽️ Team Lotofoot ⚽️<hello@lotofoot.radio97.fr>',
+        defaultBcc: process.env.EMAIL_BCC
+    },
+    webUrl: process.env.WEB_URL
 };
 
 export default config;
