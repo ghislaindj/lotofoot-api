@@ -103,4 +103,5 @@ function list(req, res, next) {
         .error((e) => next(e));
 }
 
+
 export default { load, get, login, register, list, getCurrentUser};
