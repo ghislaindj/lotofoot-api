@@ -4,6 +4,7 @@ import APIError from '../helpers/APIError';
 import jwt from 'jsonwebtoken';
 import config from '../../config/env';
 import httpStatus from 'http-status';
+import mailer from '../mailer/mailer';
 
 /**
  * Load user and append to req.
@@ -51,6 +52,11 @@ function register(req, res, next) {
     user.saveAsync()
         .then((savedUser) => {
             var token = jwt.sign({ id: savedUser.id, pass: savedUser.password}, config.secret, {expiresIn: config.expiresIn});
+
+            mailer.notifyAll("User registered", {
+                firstName: savedUser.firstName, 
+                email: savedUser.email
+            });
 
             res.json({
               user: savedUser,
