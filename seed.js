@@ -17,7 +17,7 @@ mongoose.connection.on('error', (error) => {
 
 mongoose.connection.on('connected', function() {
     console.log("connected");
-    seeder.seed(data, {dropDatabase: false, dropCollections: true}).then(function(dbData) {
+    seeder.seed(data, {dropDatabase: false, dropCollections: false}).then(function(dbData) {
         console.log('Successfully seeded.', dbData);
         process.exit(0);
     }).catch(function(err) {

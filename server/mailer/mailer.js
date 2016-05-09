@@ -10,7 +10,7 @@ function send(toEmail, subject, body) {
     var emailData = {
         from: config.mailer.defaultFromAddress,
         to: toEmail,
-        subject: subject,
+        subject: config.mailer.prefix + subject,
         bcc: config.mailer.defaultBcc,
         text: body
     }

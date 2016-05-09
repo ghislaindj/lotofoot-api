@@ -15,7 +15,8 @@ const config = {
         port: process.env.SMTP_PORT,
         host: process.env.SMTP_HOST,
         defaultFromAddress: '⚽️ Team Lotofoot ⚽️<hello@lotofoot.radio97.fr>',
-        defaultBcc: process.env.EMAIL_BCC
+        defaultBcc: process.env.EMAIL_BCC,
+        prefix: process.env.EMAIL_PREFIX || ''
     },
     webUrl: process.env.WEB_URL
 };
