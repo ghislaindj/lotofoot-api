@@ -1,7 +1,7 @@
 import User from '../models/user';
 import passport from 'passport';
 import APIError from '../helpers/APIError';
-import jwt from 'jwt-simple';
+import jwt from 'jsonwebtoken';
 import config from '../../config/env';
 import httpStatus from 'http-status';
 
@@ -50,7 +50,7 @@ function register(req, res, next) {
 
     user.saveAsync()
         .then((savedUser) => {
-            var token = jwt.encode({ id: savedUser.id}, config.secret);
+            var token = jwt.sign({ id: savedUser.id, pass: savedUser.password}, config.secret, {expiresIn: config.expiresIn});
 
             res.json({
               user: savedUser,
@@ -77,7 +77,7 @@ function login(req, res, next) {
             const err = new APIError('Not authorize', httpStatus.UNAUTHORIZED);
             next(err);
         } else {
-            var token = jwt.encode({ id: user.id}, config.secret);
+            var token = jwt.sign({ id: user.id, pass: user.password}, config.secret, {expiresIn: config.expiresIn});
 
             res.json({
               success: true,

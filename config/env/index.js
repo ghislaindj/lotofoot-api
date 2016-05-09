@@ -7,6 +7,7 @@ const config = {
     port: process.env.PORT || 3000,
     env: process.env.NODE_ENV || 'development',
     secret: process.env.SECRET_TOKEN,
+    expiresIn: 3600 * 24 * 14,
     footballDataKey: process.env.FOOTBALL_DATA_KEY,
     mailer: {
         user: process.env.SMTP_USER,

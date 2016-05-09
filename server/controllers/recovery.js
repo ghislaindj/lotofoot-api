@@ -5,7 +5,7 @@ import APIError from '../helpers/APIError';
 import config from '../../config/env';
 import httpStatus from 'http-status';
 import mailer from '../mailer/mailer';
-import jwt from 'jwt-simple';
+import jwt from 'jsonwebtoken';
 
 /**
  * Load token and append to req.
@@ -21,7 +21,7 @@ function load(req, res, next, id) {
  * Create new recoveryPassword
  * @property {string} req.body.email - The email of user.
  */
-function create(req, res) {
+function create(req, res, next) {
     User.findByEmail(req.body.email)
     .then((user) => {
         if(user) {
@@ -38,6 +38,7 @@ function create(req, res) {
             return res.sendStatus(httpStatus.OK);
         }
     })
+    .error((e) => next(e));
 }
 
 /**
@@ -65,7 +66,7 @@ function updatePassword(req, res, next) {
         return user.saveAsync();
     })
     .then((savedUser) => {
-        var token = jwt.encode({ id: savedUser.id}, config.secret);
+        var token = jwt.sign({ id: savedUser.id, pass: savedUser.password}, config.secret, {expiresIn: config.expiresIn});
 
         res.json({
           user: savedUser,
