@@ -15,8 +15,22 @@ mongoose.connection.on('error', (error) => {
 const debug = require('debug')('lotofoot-api:index');
 
 // listen on port config.port
-app.listen(config.port, () => {
+const server = app.listen(config.port, () => {
     debug(`server started on port ${config.port} (${config.env})`);
 });
 
-export default app;
+const io = require('socket.io')(server);
+
+io.on('connection', (socket) => {
+  console.log('a user connected');
+
+  var ping = setInterval(function () {
+    socket.volatile.emit('ping', 'ping');
+  }, 10000);
+ 
+  socket.on('disconnect', () => {
+    console.log('user disconnected');
+  });
+});
+
+export default app
