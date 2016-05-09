@@ -19,7 +19,11 @@ const server = app.listen(config.port, () => {
     debug(`server started on port ${config.port} (${config.env})`);
 });
 
-const io = require('socket.io')(server);
+let io = require('socket.io')({
+    transports: [ 'xhr-polling' ],
+    pollingDuration: 10,
+}).listen(server);
+
 
 io.on('connection', (socket) => {
   console.log('a user connected');
