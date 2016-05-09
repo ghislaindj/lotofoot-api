@@ -1,6 +1,7 @@
 import Message from '../models/message';
 import _ from 'lodash';
 import mailer from '../mailer/mailer';
+import notifier from '../helpers/notifier';
 
 /**
  * Load message and append to req.
@@ -35,6 +36,8 @@ function create(req, res, next) {
     message.saveAsync()
         .then((savedMessage) => {
             //mailer.notifyAll("Message", {user: savedMessage.user, text: savedMessage.text})
+            notifier.send("message", savedMessage);
+
             return res.json(savedMessage);
         })
         .error((e) => next(e));

@@ -28,7 +28,6 @@
     "http-status": "^0.2.1",
     "joi": "^8.0.5",
     "jsonwebtoken": "^5.7.0",
-    "jwt-simple": "^0.5.0",
     "lodash": "^4.8.2",
     "method-override": "^2.3.5",
     "moment": "^2.12.0",
@@ -40,7 +39,6 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^4.0.0",
-    "socket.io": "^1.4.6",
     "superagent": "^1.8.3",
     "superagent-bluebird-promise": "^3.0.0"
   },

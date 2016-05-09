@@ -1,6 +1,7 @@
 import Game from '../models/game';
 import Team from '../models/team';
 import _ from 'lodash';
+import notifier from '../helpers/notifier';
 
 /**
  * Load game and append to req.
@@ -45,7 +46,10 @@ function update(req, res, next) {
 
 
     game.saveAsync()
-        .then((savedGame) => res.json(savedGame))
+        .then((savedGame) => {
+            notifier.send("game", savedGame);
+            return res.json(savedGame)
+        })
         .error((e) => next(e));
 }
 
