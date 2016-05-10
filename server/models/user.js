@@ -24,6 +24,10 @@ const UserSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     },
+    hasPaid: {
+        type: Boolean,
+        default: false
+    },
     firstName: {
         type: String,
         required: true
@@ -82,6 +86,7 @@ UserSchema.set('toJSON', {
             admin: ret.admin,
             firstName: ret.firstName,
             lastName: ret.lastName,
+            hasPaid: ret.hasPaid,
             points: ret.points,
             createdAt: ret.createdAt,
             updatedAt: ret.updatedAt

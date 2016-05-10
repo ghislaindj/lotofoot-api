@@ -46,7 +46,8 @@ function register(req, res, next) {
     const user = new User({
         email: req.body.email, 
         password: req.body.password, 
-        firstName: req.body.firstName
+        firstName: req.body.firstName,
+        lastName: req.body.lastName
     });
 
     user.saveAsync()
