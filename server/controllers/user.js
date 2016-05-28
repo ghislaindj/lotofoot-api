@@ -44,7 +44,8 @@ function getCurrentUser(req, res, next) {
  */
 function register(req, res, next) {
     const user = new User({
-        email: req.body.email, 
+        email: req.body.email,
+        username: req.body.username,
         password: req.body.password, 
         firstName: req.body.firstName,
         lastName: req.body.lastName
@@ -73,7 +74,7 @@ function register(req, res, next) {
  * @returns {User}
  */
 function login(req, res, next) {
-    User.findByEmail(req.body.email)
+    User.findByUsernameOrEmail(req.body.username)
     .then((user) => {
         if (!user) {
             const err = new APIError('Not found', httpStatus.NOT_FOUND);

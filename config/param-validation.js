@@ -1,7 +1,6 @@
 import Joi from 'joi';
 
 export default {
-    // // POST /api/games
     updateGame: {
         body: {
             scoreTeamA: Joi.number().integer().min(0),
@@ -13,6 +12,7 @@ export default {
     registerUser: {
         body: {
             email: Joi.string().email().required(),
+            username: Joi.string().required(),
             password: Joi.string().min(3).max(20).required(),
             firstName: Joi.string().required(),
             lastName: Joi.string()
@@ -20,7 +20,7 @@ export default {
     },
     loginUser: {
         body: {
-            email: Joi.string().email().required(),
+            username: Joi.string().required(),
             password: Joi.string().min(3).max(20).required()
         }
     },

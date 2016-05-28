@@ -16,6 +16,11 @@ const UserSchema = new mongoose.Schema({
         lowercase: true,
         unique: true
     },
+    username: {
+        type: String,
+        required: true,
+        unique: true
+    },
     password: {
         type: String,
         required: true
@@ -76,6 +81,13 @@ UserSchema.pre('save', function(next) {
     })
 });
 
+UserSchema.pre('save', function (next) {
+    if(_.isUndefined(this.username)) {
+        this.username = this.email;
+    }
+    next();
+});
+
 
 UserSchema.set('toJSON', {
     virtuals: true,
@@ -83,6 +95,7 @@ UserSchema.set('toJSON', {
         var retJson = {
             _id: ret._id,
             email: ret.email,
+            username: ret.username,
             admin: ret.admin,
             firstName: ret.firstName,
             lastName: ret.lastName,
@@ -157,6 +170,22 @@ UserSchema.statics = {
      */
     findByEmail(email) {
         return this.findOne({email})
+            .execAsync().then((user) => {
+                if (user) {
+                    return user;
+                }
+                const err = new APIError('No such user exists!', httpStatus.NOT_FOUND);
+                return Promise.reject(err);
+            });
+    },
+
+    /**
+     * FindbyUsernameOrEmail
+     * @param {ObjectId} param : email or username
+     * @returns {Promise<User, APIError>}
+     */
+    findByUsernameOrEmail(param) {
+        return this.findOne({$or:[ {'email': param}, {'username': param}]})
             .execAsync().then((user) => {
                 if (user) {
                     return user;
