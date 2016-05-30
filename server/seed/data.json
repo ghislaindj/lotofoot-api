@@ -278,7 +278,7 @@
             "time": "21:00",
             "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
             "stadium": "Saint-Etienne",
-            "channel": "",
+            "channel": "tf1",
             "teamA": "->teams.portugal",
             "teamB": "->teams.iceland",
             "footDbUrl": "http://api.football-data.org/v1/fixtures/149888"
@@ -447,7 +447,7 @@
             "time": "21:00",
             "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
             "stadium": "Lyon",
-            "channel": "m6",
+            "channel": "",
             "teamA": "->teams.romania",
             "teamB": "->teams.albania",
             "footDbUrl": "http://api.football-data.org/v1/fixtures/149883"
@@ -460,7 +460,7 @@
             "time": "21:00",
             "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
             "stadium": "Lille",
-            "channel": "",
+            "channel": "m6",
             "teamA": "->teams.switzerland",
             "teamB": "->teams.france",
             "footDbUrl": "http://api.football-data.org/v1/fixtures/149853"
@@ -473,7 +473,7 @@
             "time": "21:00",
             "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
             "stadium": "Toulouse",
-            "channel": "tf1",
+            "channel": "",
             "teamA": "->teams.russia",
             "teamB": "->teams.wales",
             "footDbUrl": "http://api.football-data.org/v1/fixtures/149856"
@@ -486,7 +486,7 @@
             "time": "21:00",
             "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
             "stadium": "Saint-Etienne",
-            "channel": "",
+            "channel": "tmc",
             "teamA": "->teams.slovakia",
             "teamB": "->teams.england",
             "footDbUrl": "http://api.football-data.org/v1/fixtures/149857"
@@ -525,7 +525,7 @@
             "time": "21:00",
             "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
             "stadium": "Lens",
-            "channel": "tf1",
+            "channel": "",
             "teamA": "->teams.czech-republic",
             "teamB": "->teams.turkey",
             "footDbUrl": "http://api.football-data.org/v1/fixtures/149869"
@@ -538,7 +538,7 @@
             "time": "21:00",
             "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
             "stadium": "Bordeaux",
-            "channel": "",
+            "channel": "tf1",
             "teamA": "->teams.croatia",
             "teamB": "->teams.spain",
             "footDbUrl": "http://api.football-data.org/v1/fixtures/149868"
@@ -577,7 +577,7 @@
             "time": "21:00",
             "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
             "stadium": "Lille",
-            "channel": "m6",
+            "channel": "",
             "teamA": "->teams.italy",
             "teamB": "->teams.ireland",
             "footDbUrl": "http://api.football-data.org/v1/fixtures/149874"
@@ -590,7 +590,7 @@
             "time": "21:00",
             "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
             "stadium": "Nice",
-            "channel": "",
+            "channel": "m6",
             "teamA": "->teams.sweden",
             "teamB": "->teams.belgium",
             "footDbUrl": "http://api.football-data.org/v1/fixtures/149875"
@@ -756,7 +756,7 @@
             "time": "21:00",
             "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
             "stadium": "Saint-Denis",
-            "channel": "",
+            "channel": "m6",
             "futureTeamA": "v49",
             "futureTeamB": "v50"
           }
