@@ -39,7 +39,11 @@ const TokenSchema = new mongoose.Schema({
  */
 TokenSchema.method({
     hasExpired() {
-        return moment() > this.expires;
+        var now = moment();
+        //console.log("moment", now.diff(moment(this.expires), 'seconds'));
+        //console.log("moment", moment(this.expires).diff(now, 'seconds'));
+
+        return false;//moment() > moment(this.expires);
     }
 });
 
