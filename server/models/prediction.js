@@ -76,6 +76,7 @@ PredictionSchema.pre('save', function(next) {
     let prediction = this;
     prediction.getScoreFromGame()
         .then((score) => {
+            console.log("before save", score);
             prediction.score = score;
             next();
         })

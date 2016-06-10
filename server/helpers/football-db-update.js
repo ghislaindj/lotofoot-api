@@ -35,6 +35,11 @@ export default function(game) {
             if(!_.isUndefined(fixture.result.goalsHomeTeam)) score.scoreTeamA = parseInt(fixture.result.goalsHomeTeam);
             if(!_.isUndefined(fixture.result.goalsAwayTeam)) score.scoreTeamB = parseInt(fixture.result.goalsAwayTeam);
 
+            // score.scoreTeamA = _.toNumber(score.scoreTeamA) || 0;
+            // score.scoreTeamB = _.toNumber(score.scoreTeamB) || 0;
+
+            // console.log("scoreTeamB is undefined", _.isUndefined(score.scoreTeamA));
+
             if(!_.isUndefined(score.scoreTeamA) && !_.isUndefined(score.scoreTeamB)) {
                 if((score.scoreTeamA - score.scoreTeamB) > 0) {
                     score.winner = "teamA";

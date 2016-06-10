@@ -19,11 +19,11 @@ export default function (program) {
                     return Promise.all(promises)
                 })
                 .then(function(result) {
-                    console.log("result", result);
-                    setTimeout(() => process.exit(0), 10000); 
+                    console.log("result of promise", result);
+                    setTimeout(() => process.exit(0), 20000); 
                 })
                 .catch(function(e) {
-                    console.log("error", e);
+                    console.log("error in update of the score", e);
                     process.exit(1);
                 })
         });
