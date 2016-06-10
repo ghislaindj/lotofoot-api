@@ -85,7 +85,14 @@ PredictionSchema.pre('save', function(next) {
 PredictionSchema.post('save', function(prediction) {
     return User.get(prediction.user)
         .then((user) => {
-            return user.saveAsync();
+            console.log("save user");
+            return user.saveAsync()
+                .then((user) => {
+                    console.log("user has been saved");
+                })
+                .catch(function(e) {
+                    console.log("error in update of the user", e);
+                })
         })
 });
 

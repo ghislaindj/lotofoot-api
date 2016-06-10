@@ -61,7 +61,11 @@ UserSchema.pre('save', function(next) {
     let user = this;
     user.getPoints()
     .then((points) => {
+        console.log("%s points for user : %s", points, user._id);
+
         user.points = points;
+        this.points = points;
+
         if (user.isModified('password') || user.isNew) {
             bcrypt.genSalt(10, function(err, salt) {
                 if (err) {
@@ -76,6 +80,8 @@ UserSchema.pre('save', function(next) {
                 });
             });
         } else {
+            console.log("user to be saved", user);
+
             return next();
         }
     })
