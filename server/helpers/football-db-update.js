@@ -16,6 +16,8 @@ export default function(game) {
             let score = {};
 
             if(fixture.status == 'FINISHED') score.status = 'FINISHED';
+            if(fixture.status == 'IN_PLAY')  score.status = 'IN_PROGRESS';
+
 
             // goalsHomeTeam: 0,
             // goalsAwayTeam: 0,

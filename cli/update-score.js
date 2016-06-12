@@ -13,6 +13,7 @@ export default function (program) {
             console.log("update the score ...");
             Game.today({})
                 .then((games) => {
+                    console.log("######### games :", games);
                     var promises = _.map(games, (game) => {
                         return game.updateScoreFromFootDb();
                     })

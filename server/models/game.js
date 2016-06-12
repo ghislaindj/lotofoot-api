@@ -199,7 +199,7 @@ GameSchema.statics = {
      * @returns {Promise<Game, APIError>}
      */
     today({ limit = 3 }) {
-        const beginning = moment().subtract(1, 'day').startOf('day');
+        const beginning = moment().startOf('day');
         return this.find({"datetime": {$gte: beginning}})
             .sort({ datetime: 1 })
             .limit(limit)
