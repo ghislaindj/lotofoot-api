@@ -208,6 +208,20 @@ GameSchema.statics = {
     },
 
     /**
+     * Get yesterday games
+     * @param {ObjectId} id - The objectId of game.
+     * @returns {Promise<Game, APIError>}
+     */
+    yesterday({ limit = 3 }) {
+        const beginning = moment().startOf('day').subtract(2, 'day');
+        return this.find({"datetime": {$gte: beginning}})
+            .sort({ datetime: 1 })
+            .limit(limit)
+            .populate('teamA teamB')
+            .execAsync();
+    },
+
+    /**
      * List games in descending order of 'createdAt' timestamp.
      * @param {number} skip - Number of games to be skipped.
      * @param {number} limit - Limit number of games to be returned.
