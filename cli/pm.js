@@ -1,12 +1,13 @@
 import program from 'commander';
 import updateScore from './update-score';
 import updateUsers from './update-users';
+import updateGame from './update-game';
 
 import test from './test';
 
 updateScore(program);
 updateUsers(program);
-test(program);
+updateGame(program);
 
 program
     .command('*')

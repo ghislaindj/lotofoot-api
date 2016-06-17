@@ -74,7 +74,24 @@ PredictionSchema.set('toJSON', {
      */
 PredictionSchema.pre('save', function(next) {
     let prediction = this;
-    prediction.getScoreFromGame()
+    Game.get(prediction.game)
+        .then((game) => {
+            if(game.phase == 0) {
+                if(prediction.scoreTeamA > prediction.scoreTeamB) {
+                    prediction.winner = "teamA";
+                } else if(prediction.scoreTeamA < prediction.scoreTeamB) {
+                    prediction.winner = "teamB";
+                } else {
+                    prediction.winner = "nobody";
+                }
+            }
+            console.log("game.phase == 0", game.phase == 0);
+
+            return game;
+        })
+        .then((game) => {
+            return prediction.getScoreFromGame(game)
+        })
         .then((score) => {
             console.log("before save", score);
             prediction.score = score;
@@ -101,27 +118,52 @@ PredictionSchema.post('save', function(prediction) {
  * Methods
  */
 PredictionSchema.method({
-    getScoreFromGame() {
+    getScoreFromGame(game) {
         var prediction = this;
         let score = 0;
-        return Game.get(this.game)
-            .then((game) => {
-                if(game.winner == prediction.winner) {
-                    score = score + 1;
-                    if((game.scoreTeamA - game.scoreTeamB) == (prediction.scoreTeamA - prediction.scoreTeamB)) {
-                        score = score + 1;
-                    }
-                    if((game.scoreTeamA == prediction.scoreTeamA) && (game.scoreTeamB == prediction.scoreTeamB)) {
-                        score = score + 1;
-                    }
-                } else {
-                    score = 0;
-                }
+        if(game.winner == prediction.winner) {
+            score = score + scoreRules[game.phase].winner;
+            if((game.scoreTeamA - game.scoreTeamB) == (prediction.scoreTeamA - prediction.scoreTeamB)) {
+                score = score + scoreRules[game.phase].diff;
+            }
+            if((game.scoreTeamA == prediction.scoreTeamA) && (game.scoreTeamB == prediction.scoreTeamB)) {
+                score = score + scoreRules[game.phase].exact;
+            }
+        } else {
+            score = 0;
+        }
 
-                return score;
-            })
+        return score;
     }
 });
+
+const scoreRules = {
+    0: {
+        winner: 1,
+        diff: 1,
+        exact: 1
+    },
+    1: {
+        winner: 2,
+        diff: 2,
+        exact: 2
+    },
+    2: {
+        winner: 3,
+        diff: 2,
+        exact: 3
+    },
+    3: {
+        winner: 4,
+        diff: 2,
+        exact: 4
+    }, 
+    4: {
+        winner: 5,
+        diff: 2,
+        exact: 5
+    }
+}
 
 /**
  * Statics

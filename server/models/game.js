@@ -63,6 +63,9 @@ const GameSchema = new mongoose.Schema({
     },
     footDbUrl: {
         type: String
+    },
+    resultDetails: {
+        type: Object
     }
 }, {
         timestamps: true
@@ -151,6 +154,7 @@ GameSchema.set('toJSON', {
             channel: ret.channel,
             group: ret.group,
             isFinished: ret.isFinished,
+            resultDetails: ret.resultDetails,
             createdAt: ret.createdAt,
             updatedAt: ret.updatedAt
         };
@@ -169,6 +173,23 @@ GameSchema.statics = {
      */
     get(id) {
         return this.findById(id)
+            .populate('teamA teamB')
+            .execAsync().then((game) => {
+                if (game) {
+                    return game;
+                }
+                const err = new APIError('No such game exists!', httpStatus.NOT_FOUND);
+                return Promise.reject(err);
+            });
+    },
+
+    /**
+     * Get game
+     * @param {ObjectId} id - The objectId of game.
+     * @returns {Promise<Game, APIError>}
+     */
+    getByFriendlyId(friendlyId) {
+        return this.findOne({"friendlyId": friendlyId})
             .populate('teamA teamB')
             .execAsync().then((game) => {
                 if (game) {
