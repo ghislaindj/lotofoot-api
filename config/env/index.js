@@ -14,7 +14,7 @@ const config = {
         pass: process.env.SMTP_PASS,
         port: process.env.SMTP_PORT,
         host: process.env.SMTP_HOST,
-        defaultFromAddress: '⚽️ Team Lotofoot ⚽️<hello@lotofoot.radio97.fr>',
+        defaultFromAddress: '⚽️ Team Lotofoot ⚽️<hello@lotofoot.io>',
         defaultBcc: process.env.EMAIL_BCC,
         prefix: process.env.EMAIL_PREFIX || ''
     },

@@ -248,7 +248,7 @@ GameSchema.statics = {
      * @param {number} limit - Limit number of games to be returned.
      * @returns {Promise<Game[]>}
      */
-    list({ skip = 0, limit = 50 } = {}) {
+    list({ skip = 0, limit = 51 } = {}) {
         return this.find()
             .sort({ datetime: 1 })
             .skip(skip)
