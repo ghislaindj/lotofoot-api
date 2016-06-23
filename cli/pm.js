@@ -3,6 +3,8 @@ import updateScore from './update-score';
 import updateUsers from './update-users';
 import updateGame from './update-game';
 import updateAll from './update-all';
+import stats from './stats';
+import statsGlobal from './stats-global';
 
 
 import test from './test';
@@ -11,6 +13,8 @@ updateScore(program);
 updateUsers(program);
 updateGame(program);
 updateAll(program);
+stats(program);
+statsGlobal(program);
 
 program
     .command('*')

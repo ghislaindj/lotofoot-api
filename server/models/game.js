@@ -105,6 +105,26 @@ GameSchema.post('save', function(game) {
 });
 
 
+// GameSchema.post('save', function(game) {
+//     console.log("game %s has been saved", game._id);
+//     if(game.status == 'FINISHED') {
+//         this.find({futureTeamA: })
+//     }
+
+//     return Prediction.find({game: game._id})
+//         .execAsync()
+//         .then((predictions) => {
+//             console.log("predictions found", predictions);
+//             return Promise.all(_.map(predictions, (prediction) => {
+//                 return prediction.saveAsync();
+//             }));
+//         })
+//         .catch((e) => {
+//             console.log("error in post save", e);
+//         })
+// });
+
+
 /**
  * Methods
  */
@@ -113,8 +133,6 @@ GameSchema.method({
         return getScoreFromFootDB(this)
             .then((score) => {
                 console.log("score to be updated", score);
-                console.log("score to be updated teamA", isNaN(score.scoreTeamA));
-
                 if(_.isUndefined(score) || isNaN(score.scoreTeamA) || isNaN(score.scoreTeamB)) return;
 
                 _.assign(this, score);
@@ -253,6 +271,13 @@ GameSchema.statics = {
             .sort({ datetime: 1 })
             .skip(skip)
             .limit(limit)
+            .populate('teamA teamB')
+            .execAsync();
+    },
+
+    finished({}) {
+        return this.find({"status": "FINISHED"})
+            .sort({ datetime: 1 })
             .populate('teamA teamB')
             .execAsync();
     }
