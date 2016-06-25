@@ -123,11 +123,20 @@ PredictionSchema.method({
         let score = 0;
         if(game.winner == prediction.winner) {
             score = score + scoreRules[game.phase].winner;
-            if((game.scoreTeamA - game.scoreTeamB) == (prediction.scoreTeamA - prediction.scoreTeamB)) {
-                score = score + scoreRules[game.phase].diff;
-            }
-            if((game.scoreTeamA == prediction.scoreTeamA) && (game.scoreTeamB == prediction.scoreTeamB)) {
-                score = score + scoreRules[game.phase].exact;
+            if(game.resultDetails && game.resultDetails.extraTime) {
+                if((game.resultDetails.extraTime.scoreTeamA - game.resultDetails.extraTime.scoreTeamB) == (prediction.scoreTeamA - prediction.scoreTeamB)) {
+                    score = score + scoreRules[game.phase].diff;
+                }
+                if((game.resultDetails.extraTime.scoreTeamA == prediction.scoreTeamA) && (game.resultDetails.extraTime.scoreTeamB == prediction.scoreTeamB)) {
+                    score = score + scoreRules[game.phase].exact;
+                }
+            } else {
+                if((game.scoreTeamA - game.scoreTeamB) == (prediction.scoreTeamA - prediction.scoreTeamB)) {
+                    score = score + scoreRules[game.phase].diff;
+                }
+                if((game.scoreTeamA == prediction.scoreTeamA) && (game.scoreTeamB == prediction.scoreTeamB)) {
+                    score = score + scoreRules[game.phase].exact;
+                }
             }
         } else {
             score = 0;

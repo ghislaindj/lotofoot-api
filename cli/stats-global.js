@@ -23,6 +23,10 @@ export default function (program) {
                 .then(function(predictions) {
                     //console.log("result of promise", predictions);
                     var predictionsData = _.flatten(predictions)
+                    // console.log("_id, game, score, date");
+                    // _.map(predictionsData, (prediction) => {
+                    //     console.log("%s, %s, %s, %s", prediction._id, prediction.game.id, prediction.score, prediction.createdAt);
+                    // })
                     var perfectCount = _.reduce(predictionsData, function(sum, prediction) {
                         if(prediction.score == 3) {
                             return sum + 1;
