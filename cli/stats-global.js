@@ -28,7 +28,7 @@ export default function (program) {
                     //     console.log("%s, %s, %s, %s", prediction._id, prediction.game.id, prediction.score, prediction.createdAt);
                     // })
                     var perfectCount = _.reduce(predictionsData, function(sum, prediction) {
-                        if(prediction.score == 3) {
+                        if(prediction.score == 3 || prediction.score == 6) {
                             return sum + 1;
                         } else {
                             return sum;
