@@ -1,0 +1,971 @@
+{
+  "_dependencies": {
+    "moment": "moment"
+  },
+  "teams": {
+    "_model": "Team",
+    "argentina": {
+      "slug": "argentina",
+      "name": "Argentine",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
+    },
+    "australia": {
+      "slug": "australia",
+      "name": "Australie",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg"
+    },
+    "belgium": {
+      "slug": "belgium",
+      "name": "Belgique",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/9/92/Flag_of_Belgium_%28civil%29.svg"
+    },
+    "brazil": {
+      "slug": "brazil",
+      "name": "Brésil",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/en/0/05/Flag_of_Brazil.svg"
+    },
+    "colombia": {
+      "slug": "colombia",
+      "name": "Colombie",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg"
+    },
+    "costa-rica": {
+      "slug": "costa-rica",
+      "name": "Costa Rica",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Costa_Rica_%28state%29.svg"
+    },
+    "croatia": {
+      "slug": "croatia",
+      "name": "Croatie",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg"
+    },
+    "denmark": {
+      "slug": "denmark",
+      "name": "Danemark",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg"
+    },
+    "england": {
+      "slug": "england",
+      "name": "Angleterre",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/b/be/Flag_of_England.svg"
+    },
+    "egypt": {
+      "slug": "egypt",
+      "name": "Égypte",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Egypt.svg"
+    },
+    "france": {
+      "slug": "france",
+      "name": "France",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"
+    },
+    "germany": {
+      "slug": "germany",
+      "name": "Allemagne",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg"
+    },
+    "iceland": {
+      "slug": "iceland",
+      "name": "Islande",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg"
+    },
+    "iran": {
+      "slug": "iran",
+      "name": "Iran",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg"
+    },
+    "japan": {
+      "slug": "japan",
+      "name": "Japon",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg"
+    },
+    "mexico": {
+      "slug": "mexico",
+      "name": "Mexique",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
+    },
+    "morocco": {
+      "slug": "morocco",
+      "name": "Maroc",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg"
+    },
+    "nigeria": {
+      "slug": "nigeria",
+      "name": "Nigeria",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
+    },
+    "panama": {
+      "slug": "panama",
+      "name": "Panama",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg"
+    },
+    "peru": {
+      "slug": "peru",
+      "name": "Pérou",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/d/df/Flag_of_Peru_%28state%29.svg"
+    },
+    "poland": {
+      "slug": "poland",
+      "name": "Pologne",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg"
+    },
+    "portugal": {
+      "slug": "portugal",
+      "name": "Portugal",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg"
+    },
+    "russia": {
+      "slug": "russia",
+      "name": "Russie",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"
+    },
+    "saudi-arabia": {
+      "slug": "saudi-arabia",
+      "name": "Arabie saoudite",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg"
+    },
+    "senegal": {
+      "slug": "senegal",
+      "name": "Sénégal",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Flag_of_Senegal.svg"
+    },
+    "serbia": {
+      "slug": "serbia",
+      "name": "Serbie",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg"
+    },
+    "south-korea": {
+      "slug": "south-korea",
+      "name": "Corée du Sud",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"
+    },
+    "spain": {
+      "slug": "spain",
+      "name": "Espagne",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"
+    },
+    "sweden": {
+      "slug": "sweden",
+      "name": "Suède",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg"
+    },
+    "switzerland": {
+      "slug": "switzerland",
+      "name": "Suisse",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Switzerland_%28Pantone%29.svg"
+    },
+    "tunisia": {
+      "slug": "tunisia",
+      "name": "Tunisie",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg"
+    },
+    "uruguay": {
+      "slug": "uruguay",
+      "name": "Uruguay",
+      "flagUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg"
+    }
+  },
+  "games": {
+    "_model": "Game",
+    "1":{
+      "friendlyId": 1,
+      "phase": 0,
+      "group": "a",
+      "date": "2018-06-14",
+      "time": "18:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Loujniki, Moscou",
+      "channel": "",
+      "teamA": "->teams.russia",
+      "teamB": "->teams.saudi-arabia",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "2":{
+      "friendlyId": 2,
+      "phase": 0,
+      "group": "a",
+      "date": "2018-06-15",
+      "time": "17:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "lekaterinbourg Arena, Iekaterinbourg",
+      "channel": "",
+      "teamA": "->teams.egypt",
+      "teamB": "->teams.uruguay",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "3":{
+      "friendlyId": 3,
+      "phase": 0,
+      "group": "b",
+      "date": "2018-06-15",
+      "time": "18:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Krestovski, Saint-Pétersbourg",
+      "channel": "",
+      "teamA": "->teams.morocco",
+      "teamB": "->teams.iran",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "4":{
+      "friendlyId": 4,
+      "phase": 0,
+      "group": "b",
+      "date": "2018-06-15",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Ficht, Sotchi",
+      "channel": "",
+      "teamA": "->teams.portugal",
+      "teamB": "->teams.spain",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "5":{
+      "friendlyId": 5,
+      "phase": 0,
+      "group": "c",
+      "date": "2018-06-16",
+      "time": "12:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Kazan Arena, Kazan",
+      "channel": "",
+      "teamA": "->teams.france",
+      "teamB": "->teams.australia",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "6":{
+      "friendlyId": 6,
+      "phase": 0,
+      "group": "c",
+      "date": "2018-06-16",
+      "time": "19:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Mordovie, Saransk",
+      "channel": "",
+      "teamA": "->teams.peru",
+      "teamB": "->teams.denmark",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "7":{
+      "friendlyId": 7,
+      "phase": 0,
+      "group": "d",
+      "date": "2018-06-16",
+      "time": "16:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade du Spartak, Moscou",
+      "channel": "",
+      "teamA": "->teams.argentina",
+      "teamB": "->teams.iceland",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "8":{
+      "friendlyId": 8,
+      "phase": 0,
+      "group": "d",
+      "date": "2018-06-16",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Kaliningrad, Kaliningrad",
+      "channel": "",
+      "teamA": "->teams.croatia",
+      "teamB": "->teams.nigeria",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "9":{
+      "friendlyId": 9,
+      "phase": 0,
+      "group": "e",
+      "date": "2018-06-17",
+      "time": "16:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Samara Arena, Samara",
+      "channel": "",
+      "teamA": "->teams.costa-rica",
+      "teamB": "->teams.serbia",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "10":{
+      "friendlyId": 10,
+      "phase": 0,
+      "group": "e",
+      "date": "2018-06-17",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Rostov Arena, Rostov-sur-le-Don",
+      "channel": "",
+      "teamA": "->teams.brazil",
+      "teamB": "->teams.switzerland",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "11":{
+      "friendlyId": 11,
+      "phase": 0,
+      "group": "f",
+      "date": "2018-06-17",
+      "time": "18:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Loujniki, Moscou",
+      "channel": "",
+      "teamA": "->teams.germany",
+      "teamB": "->teams.mexico",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "12":{
+      "friendlyId": 12,
+      "phase": 0,
+      "group": "f",
+      "date": "2018-06-18",
+      "time": "15:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Nijni Novgorod, Nijni Novgorod",
+      "channel": "",
+      "teamA": "->teams.sweden",
+      "teamB": "->teams.south-korea",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "13":{
+      "friendlyId": 13,
+      "phase": 0,
+      "group": "g",
+      "date": "2018-06-18",
+      "time": "18:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Ficht, Sotchi",
+      "channel": "",
+      "teamA": "->teams.belgium",
+      "teamB": "->teams.panama",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "14":{
+      "friendlyId": 14,
+      "phase": 0,
+      "group": "g",
+      "date": "2018-06-18",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Volgograd Arena, Volgograd",
+      "channel": "",
+      "teamA": "->teams.tunisia",
+      "teamB": "->teams.england",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "15":{
+      "friendlyId": 15,
+      "phase": 0,
+      "group": "h",
+      "date": "2018-06-19",
+      "time": "15:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade du Spartak, Moscou",
+      "channel": "",
+      "teamA": "->teams.poland",
+      "teamB": "->teams.senegal",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "16":{
+      "friendlyId": 16,
+      "phase": 0,
+      "group": "h",
+      "date": "2018-06-19",
+      "time": "18:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Mordovie, Saransk",
+      "channel": "",
+      "teamA": "->teams.colombia",
+      "teamB": "->teams.japan",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "17":{
+      "friendlyId": 17,
+      "phase": 0,
+      "group": "a",
+      "date": "2018-06-19",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Krestovski, Saint-Pétersbourg",
+      "channel": "",
+      "teamA": "->teams.russia",
+      "teamB": "->teams.egypt",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "18":{
+      "friendlyId": 18,
+      "phase": 0,
+      "group": "a",
+      "date": "2018-06-20",
+      "time": "18:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Rostov Arena, Rostov-sur-le-Don",
+      "channel": "",
+      "teamA": "->teams.uruguay",
+      "teamB": "->teams.saudi-arabia",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "19":{
+      "friendlyId": 19,
+      "phase": 0,
+      "group": "b",
+      "date": "2018-06-20",
+      "time": "15:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Loujniki, Moscou",
+      "channel": "",
+      "teamA": "->teams.portugal",
+      "teamB": "->teams.morocco",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "20":{
+      "friendlyId": 20,
+      "phase": 0,
+      "group": "b",
+      "date": "2018-06-20",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Kazan Arena, Kazan",
+      "channel": "",
+      "teamA": "->teams.iran",
+      "teamB": "->teams.spain",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "21":{
+      "friendlyId": 21,
+      "phase": 0,
+      "group": "c",
+      "date": "2018-06-21",
+      "time": "17:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Iekaterinbourg Arena, Iekaterinbourg",
+      "channel": "",
+      "teamA": "->teams.france",
+      "teamB": "->teams.peru",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "22":{
+      "friendlyId": 22,
+      "phase": 0,
+      "group": "c",
+      "date": "2018-06-21",
+      "time": "14:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Samara Arena, Samara",
+      "channel": "",
+      "teamA": "->teams.denmark",
+      "teamB": "->teams.australia",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "23":{
+      "friendlyId": 23,
+      "phase": 0,
+      "group": "d",
+      "date": "2018-06-21",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Nijni Novgorod, Nijni Novgorod",
+      "channel": "",
+      "teamA": "->teams.argentina",
+      "teamB": "->teams.croatia",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "24":{
+      "friendlyId": 24,
+      "phase": 0,
+      "group": "d",
+      "date": "2018-06-22",
+      "time": "18:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Volgograd Arena, Volgograd",
+      "channel": "",
+      "teamA": "->teams.nigeria",
+      "teamB": "->teams.iceland",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "25":{
+      "friendlyId": 25,
+      "phase": 0,
+      "group": "e",
+      "date": "2018-06-22",
+      "time": "15:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Krestovski, Saint-Pétersbourg",
+      "channel": "",
+      "teamA": "->teams.brazil",
+      "teamB": "->teams.costa-rica",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "26":{
+      "friendlyId": 26,
+      "phase": 0,
+      "group": "e",
+      "date": "2018-06-22",
+      "time": "20:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Kaliningrad, Kaliningrad",
+      "channel": "",
+      "teamA": "->teams.serbia",
+      "teamB": "->teams.switzerland",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "27":{
+      "friendlyId": 27,
+      "phase": 0,
+      "group": "f",
+      "date": "2018-06-23",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Ficht, Sotchi",
+      "channel": "",
+      "teamA": "->teams.germany",
+      "teamB": "->teams.sweden",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "28":{
+      "friendlyId": 28,
+      "phase": 0,
+      "group": "f",
+      "date": "2018-06-23",
+      "time": "18:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Rostov Arena, Rostov-sur-le-Don",
+      "channel": "",
+      "teamA": "->teams.south-korea",
+      "teamB": "->teams.mexico",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "29":{
+      "friendlyId": 29,
+      "phase": 0,
+      "group": "g",
+      "date": "2018-06-23",
+      "time": "15:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade du Spartak, Moscou",
+      "channel": "",
+      "teamA": "->teams.belgium",
+      "teamB": "->teams.tunisia",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "30":{
+      "friendlyId": 30,
+      "phase": 0,
+      "group": "g",
+      "date": "2018-06-24",
+      "time": "15:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Nijni Novgorod, Nijni Novgorod",
+      "channel": "",
+      "teamA": "->teams.england",
+      "teamB": "->teams.panama",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "31":{
+      "friendlyId": 31,
+      "phase": 0,
+      "group": "h",
+      "date": "2018-06-24",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Kazan Arena, Kazan",
+      "channel": "",
+      "teamA": "->teams.poland",
+      "teamB": "->teams.colombia",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "32":{
+      "friendlyId": 32,
+      "phase": 0,
+      "group": "h",
+      "date": "2018-06-24",
+      "time": "20:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Iekaterinbourg Arena, Iekaterinbourg",
+      "channel": "",
+      "teamA": "->teams.japan",
+      "teamB": "->teams.senegal",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "33":{
+      "friendlyId": 33,
+      "phase": 0,
+      "group": "a",
+      "date": "2018-06-25",
+      "time": "17:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Samara Arena, Samara",
+      "channel": "",
+      "teamA": "->teams.uruguay",
+      "teamB": "->teams.russia",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "34":{
+      "friendlyId": 34,
+      "phase": 0,
+      "group": "a",
+      "date": "2018-06-25",
+      "time": "17:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Volgograd Arena, Volgograd",
+      "channel": "",
+      "teamA": "->teams.egypt",
+      "teamB": "->teams.saudi-arabia",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "35":{
+      "friendlyId": 35,
+      "phase": 0,
+      "group": "b",
+      "date": "2018-06-25",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Mordovie, Saransk",
+      "channel": "",
+      "teamA": "->teams.iran",
+      "teamB": "->teams.portugal",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "36":{
+      "friendlyId": 36,
+      "phase": 0,
+      "group": "b",
+      "date": "2018-06-25",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Kaliningrad, Kaliningrad",
+      "channel": "",
+      "teamA": "->teams.spain",
+      "teamB": "->teams.morocco",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "37":{
+      "friendlyId": 37,
+      "phase": 0,
+      "group": "c",
+      "date": "2018-06-26",
+      "time": "17:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Loujniki, Moscou",
+      "channel": "",
+      "teamA": "->teams.denmark",
+      "teamB": "->teams.france",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "38":{
+      "friendlyId": 38,
+      "phase": 0,
+      "group": "c",
+      "date": "2018-06-26",
+      "time": "17:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Ficht, Sotchi",
+      "channel": "",
+      "teamA": "->teams.australia",
+      "teamB": "->teams.peru",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "39":{
+      "friendlyId": 39,
+      "phase": 0,
+      "group": "d",
+      "date": "2018-06-26",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Krestovski, Saint-Pétersbourg",
+      "channel": "",
+      "teamA": "->teams.nigeria",
+      "teamB": "->teams.argentina",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "40":{
+      "friendlyId": 40,
+      "phase": 0,
+      "group": "d",
+      "date": "2018-06-26",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Rostov Arena, Rostov-sur-le-Don",
+      "channel": "",
+      "teamA": "->teams.iceland",
+      "teamB": "->teams.croatia",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "41":{
+      "friendlyId": 41,
+      "phase": 0,
+      "group": "e",
+      "date": "2018-06-27",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade du Spartak, Moscou",
+      "channel": "",
+      "teamA": "->teams.serbia",
+      "teamB": "->teams.brazil",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "42":{
+      "friendlyId": 42,
+      "phase": 0,
+      "group": "e",
+      "date": "2018-06-27",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Nijni Novgorod, Nijni Novgorod",
+      "channel": "",
+      "teamA": "->teams.switzerland",
+      "teamB": "->teams.costa-rica",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "43":{
+      "friendlyId": 43,
+      "phase": 0,
+      "group": "f",
+      "date": "2018-06-27",
+      "time": "17:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Kazan Arena, Kazan",
+      "channel": "",
+      "teamA": "->teams.south-korea",
+      "teamB": "->teams.germany",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "44":{
+      "friendlyId": 44,
+      "phase": 0,
+      "group": "f",
+      "date": "2018-06-27",
+      "time": "19:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Iekaterinbourg Arena, Iekaterinbourg",
+      "channel": "",
+      "teamA": "->teams.mexico",
+      "teamB": "->teams.sweden",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "45":{
+      "friendlyId": 45,
+      "phase": 0,
+      "group": "g",
+      "date": "2018-06-28",
+      "time": "20:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Kaliningrad, Kaliningrad",
+      "channel": "",
+      "teamA": "->teams.england",
+      "teamB": "->teams.belgium",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "46":{
+      "friendlyId": 46,
+      "phase": 0,
+      "group": "g",
+      "date": "2018-06-28",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Mordovie , Saransk",
+      "channel": "",
+      "teamA": "->teams.panama",
+      "teamB": "->teams.tunisia",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "47":{
+      "friendlyId": 47,
+      "phase": 0,
+      "group": "h",
+      "date": "2018-06-28",
+      "time": "18:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Volgograd Arena, Volgograd",
+      "channel": "",
+      "teamA": "->teams.japan",
+      "teamB": "->teams.poland",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "48":{
+      "friendlyId": 48,
+      "phase": 0,
+      "group": "h",
+      "date": "2018-06-28",
+      "time": "18:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Samara Arena, Samara",
+      "channel": "",
+      "teamA": "->teams.senegal",
+      "teamB": "->teams.colombia",
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+    },
+    "49":{
+      "friendlyId": 49,
+      "phase": 1,
+      "date": "2016-06-30",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Ficht, Sotchi",
+      "channel": "",
+      "futureTeamA": "A1",
+      "futureTeamB": "B2"
+    },
+    "50":{
+      "friendlyId": 50,
+      "phase": 1,
+      "date": "2016-06-30",
+      "time": "17:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Kazan Arena, Kazan",
+      "channel": "",
+      "futureTeamA": "C1",
+      "futureTeamB": "D2"
+    },
+    "51":{
+      "friendlyId": 51,
+      "phase": 1,
+      "date": "2016-07-01",
+      "time": "17:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Loujniki, Moscou",
+      "channel": "",
+      "futureTeamA": "B1",
+      "futureTeamB": "A2"
+    },
+    "52":{
+      "friendlyId": 52,
+      "phase": 1,
+      "date": "2016-07-01",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Nijni Novgorod, Nijni Novgorod",
+      "channel": "",
+      "futureTeamA": "D1",
+      "futureTeamB": "C2"
+    },
+    "53":{
+      "friendlyId": 53,
+      "phase": 1,
+      "date": "2016-07-02",
+      "time": "18:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Samara, Samara",
+      "channel": "",
+      "futureTeamA": "E1",
+      "futureTeamB": "F2"
+    },
+    "54":{
+      "friendlyId": 54,
+      "phase": 1,
+      "date": "2016-07-02",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Rostov Arena, Rostov-sur-le-Don",
+      "channel": "",
+      "futureTeamA": "G1",
+      "futureTeamB": "H2"
+    },
+    "55":{
+      "friendlyId": 55,
+      "phase": 1,
+      "date": "2016-07-03",
+      "time": "17:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Krestovski, Saint-Pétersbourg",
+      "channel": "",
+      "futureTeamA": "F1",
+      "futureTeamB": "E2"
+    },
+    "56":{
+      "friendlyId": 56,
+      "phase": 1,
+      "date": "2016-07-03",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade du Spartak, Moscou",
+      "channel": "",
+      "futureTeamA": "H1",
+      "futureTeamB": "G2"
+    },
+    "57":{
+      "friendlyId": 57,
+      "phase": 2,
+      "date": "2016-07-06",
+      "time": "17:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade de Nijni Novgorod, Nijni Novgorod",
+      "channel": "",
+      "futureTeamA": "W49",
+      "futureTeamB": "W50"
+    },
+    "58":{
+      "friendlyId": 58,
+      "phase": 2,
+      "date": "2016-07-06",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Kazan-Arena, Kazan",
+      "channel": "",
+      "futureTeamA": "W53",
+      "futureTeamB": "W54"
+    },
+    "59":{
+      "friendlyId": 59,
+      "phase": 2,
+      "date": "2016-07-07",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Ficht, Sotchi",
+      "channel": "",
+      "futureTeamA": "W51",
+      "futureTeamB": "W52"
+    },
+    "60":{
+      "friendlyId": 60,
+      "phase": 2,
+      "date": "2016-07-07",
+      "time": "18:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Samara Arena, Samara",
+      "channel": "",
+      "futureTeamA": "W55",
+      "futureTeamB": "W56"
+    },
+    "61":{
+      "friendlyId": 61,
+      "phase": 3,
+      "date": "2016-07-10",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Krestovski, Saint-Pétersbourg",
+      "channel": "",
+      "futureTeamA": "W57",
+      "futureTeamB": "W58"
+    },
+    "62":{
+      "friendlyId": 62,
+      "phase": 3,
+      "date": "2016-07-11",
+      "time": "21:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Loujniki, Moscou",
+      "channel": "",
+      "futureTeamA": "W59",
+      "futureTeamB": "W60"
+    },
+    "63":{
+      "friendlyId": 63,
+      "phase": 4,
+      "date": "2016-07-14",
+      "time": "17:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Krestovski, Saint-Pétersbourg",
+      "channel": "",
+      "futureTeamA": "L61",
+      "futureTeamB": "L62"
+    },
+    "64":{
+      "friendlyId": 64,
+      "phase": 4,
+      "date": "2016-07-15",
+      "time": "18:00",
+      "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
+      "stadium": "Stade Loujniki, Moscou",
+      "channel": "",
+      "futureTeamA": "W61",
+      "futureTeamB": "W62"
+    },
+  }
+}
