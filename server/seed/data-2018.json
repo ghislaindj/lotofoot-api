@@ -178,7 +178,7 @@
       "channel": "",
       "teamA": "->teams.russia",
       "teamB": "->teams.saudi-arabia",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165069"
     },
     "2":{
       "friendlyId": 2,
@@ -191,7 +191,7 @@
       "channel": "",
       "teamA": "->teams.egypt",
       "teamB": "->teams.uruguay",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165084"
     },
     "3":{
       "friendlyId": 3,
@@ -204,7 +204,7 @@
       "channel": "",
       "teamA": "->teams.morocco",
       "teamB": "->teams.iran",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165083"
     },
     "4":{
       "friendlyId": 4,
@@ -217,7 +217,7 @@
       "channel": "",
       "teamA": "->teams.portugal",
       "teamB": "->teams.spain",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165076"
     },
     "5":{
       "friendlyId": 5,
@@ -230,7 +230,7 @@
       "channel": "",
       "teamA": "->teams.france",
       "teamB": "->teams.australia",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165072"
     },
     "6":{
       "friendlyId": 6,
@@ -243,7 +243,7 @@
       "channel": "",
       "teamA": "->teams.peru",
       "teamB": "->teams.denmark",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165071"
     },
     "7":{
       "friendlyId": 7,
@@ -256,7 +256,7 @@
       "channel": "",
       "teamA": "->teams.argentina",
       "teamB": "->teams.iceland",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165073"
     },
     "8":{
       "friendlyId": 8,
@@ -269,7 +269,7 @@
       "channel": "",
       "teamA": "->teams.croatia",
       "teamB": "->teams.nigeria",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165074"
     },
     "9":{
       "friendlyId": 9,
@@ -282,7 +282,7 @@
       "channel": "",
       "teamA": "->teams.costa-rica",
       "teamB": "->teams.serbia",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165075"
     },
     "10":{
       "friendlyId": 10,
@@ -295,7 +295,7 @@
       "channel": "",
       "teamA": "->teams.brazil",
       "teamB": "->teams.switzerland",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165070"
     },
     "11":{
       "friendlyId": 11,
@@ -308,7 +308,7 @@
       "channel": "",
       "teamA": "->teams.germany",
       "teamB": "->teams.mexico",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165082"
     },
     "12":{
       "friendlyId": 12,
@@ -321,7 +321,7 @@
       "channel": "",
       "teamA": "->teams.sweden",
       "teamB": "->teams.south-korea",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165081"
     },
     "13":{
       "friendlyId": 13,
@@ -334,7 +334,7 @@
       "channel": "",
       "teamA": "->teams.belgium",
       "teamB": "->teams.panama",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165077"
     },
     "14":{
       "friendlyId": 14,
@@ -347,7 +347,7 @@
       "channel": "",
       "teamA": "->teams.tunisia",
       "teamB": "->teams.england",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165078"
     },
     "15":{
       "friendlyId": 15,
@@ -360,7 +360,7 @@
       "channel": "",
       "teamA": "->teams.poland",
       "teamB": "->teams.senegal",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165079"
     },
     "16":{
       "friendlyId": 16,
@@ -373,7 +373,7 @@
       "channel": "",
       "teamA": "->teams.colombia",
       "teamB": "->teams.japan",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165080"
     },
     "17":{
       "friendlyId": 17,
@@ -386,7 +386,7 @@
       "channel": "",
       "teamA": "->teams.russia",
       "teamB": "->teams.egypt",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165100"
     },
     "18":{
       "friendlyId": 18,
@@ -399,7 +399,7 @@
       "channel": "",
       "teamA": "->teams.uruguay",
       "teamB": "->teams.saudi-arabia",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165086"
     },
     "19":{
       "friendlyId": 19,
@@ -412,7 +412,7 @@
       "channel": "",
       "teamA": "->teams.portugal",
       "teamB": "->teams.morocco",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165087"
     },
     "20":{
       "friendlyId": 20,
@@ -425,7 +425,7 @@
       "channel": "",
       "teamA": "->teams.iran",
       "teamB": "->teams.spain",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165085"
     },
     "21":{
       "friendlyId": 21,
@@ -438,7 +438,7 @@
       "channel": "",
       "teamA": "->teams.france",
       "teamB": "->teams.peru",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165096"
     },
     "22":{
       "friendlyId": 22,
@@ -451,7 +451,7 @@
       "channel": "",
       "teamA": "->teams.denmark",
       "teamB": "->teams.australia",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165099"
     },
     "23":{
       "friendlyId": 23,
@@ -464,7 +464,7 @@
       "channel": "",
       "teamA": "->teams.argentina",
       "teamB": "->teams.croatia",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165094"
     },
     "24":{
       "friendlyId": 24,
@@ -477,7 +477,7 @@
       "channel": "",
       "teamA": "->teams.nigeria",
       "teamB": "->teams.iceland",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165098"
     },
     "25":{
       "friendlyId": 25,
@@ -490,7 +490,7 @@
       "channel": "",
       "teamA": "->teams.brazil",
       "teamB": "->teams.costa-rica",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165092"
     },
     "26":{
       "friendlyId": 26,
@@ -503,7 +503,7 @@
       "channel": "",
       "teamA": "->teams.serbia",
       "teamB": "->teams.switzerland",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165091"
     },
     "27":{
       "friendlyId": 27,
@@ -516,7 +516,7 @@
       "channel": "",
       "teamA": "->teams.germany",
       "teamB": "->teams.sweden",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165090"
     },
     "28":{
       "friendlyId": 28,
@@ -529,7 +529,7 @@
       "channel": "",
       "teamA": "->teams.south-korea",
       "teamB": "->teams.mexico",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165089"
     },
     "29":{
       "friendlyId": 29,
@@ -542,7 +542,7 @@
       "channel": "",
       "teamA": "->teams.belgium",
       "teamB": "->teams.tunisia",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165088"
     },
     "30":{
       "friendlyId": 30,
@@ -555,7 +555,7 @@
       "channel": "",
       "teamA": "->teams.england",
       "teamB": "->teams.panama",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165093"
     },
     "31":{
       "friendlyId": 31,
@@ -568,7 +568,7 @@
       "channel": "",
       "teamA": "->teams.poland",
       "teamB": "->teams.colombia",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165097"
     },
     "32":{
       "friendlyId": 32,
@@ -581,7 +581,7 @@
       "channel": "",
       "teamA": "->teams.japan",
       "teamB": "->teams.senegal",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165095"
     },
     "33":{
       "friendlyId": 33,
@@ -594,7 +594,7 @@
       "channel": "",
       "teamA": "->teams.uruguay",
       "teamB": "->teams.russia",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165101"
     },
     "34":{
       "friendlyId": 34,
@@ -607,7 +607,7 @@
       "channel": "",
       "teamA": "->teams.egypt",
       "teamB": "->teams.saudi-arabia",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165111"
     },
     "35":{
       "friendlyId": 35,
@@ -620,7 +620,7 @@
       "channel": "",
       "teamA": "->teams.iran",
       "teamB": "->teams.portugal",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165112"
     },
     "36":{
       "friendlyId": 36,
@@ -633,7 +633,7 @@
       "channel": "",
       "teamA": "->teams.spain",
       "teamB": "->teams.morocco",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165109"
     },
     "37":{
       "friendlyId": 37,
@@ -646,7 +646,7 @@
       "channel": "",
       "teamA": "->teams.denmark",
       "teamB": "->teams.france",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165113"
     },
     "38":{
       "friendlyId": 38,
@@ -659,7 +659,7 @@
       "channel": "",
       "teamA": "->teams.australia",
       "teamB": "->teams.peru",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165107"
     },
     "39":{
       "friendlyId": 39,
@@ -672,7 +672,7 @@
       "channel": "",
       "teamA": "->teams.nigeria",
       "teamB": "->teams.argentina",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165115"
     },
     "40":{
       "friendlyId": 40,
@@ -685,7 +685,7 @@
       "channel": "",
       "teamA": "->teams.iceland",
       "teamB": "->teams.croatia",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165114"
     },
     "41":{
       "friendlyId": 41,
@@ -698,7 +698,7 @@
       "channel": "",
       "teamA": "->teams.serbia",
       "teamB": "->teams.brazil",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165116"
     },
     "42":{
       "friendlyId": 42,
@@ -711,7 +711,7 @@
       "channel": "",
       "teamA": "->teams.switzerland",
       "teamB": "->teams.costa-rica",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165108"
     },
     "43":{
       "friendlyId": 43,
@@ -724,7 +724,7 @@
       "channel": "",
       "teamA": "->teams.south-korea",
       "teamB": "->teams.germany",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165106"
     },
     "44":{
       "friendlyId": 44,
@@ -737,7 +737,7 @@
       "channel": "",
       "teamA": "->teams.mexico",
       "teamB": "->teams.sweden",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165102"
     },
     "45":{
       "friendlyId": 45,
@@ -750,7 +750,7 @@
       "channel": "",
       "teamA": "->teams.england",
       "teamB": "->teams.belgium",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165105"
     },
     "46":{
       "friendlyId": 46,
@@ -763,7 +763,7 @@
       "channel": "",
       "teamA": "->teams.panama",
       "teamB": "->teams.tunisia",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165110"
     },
     "47":{
       "friendlyId": 47,
@@ -776,7 +776,7 @@
       "channel": "",
       "teamA": "->teams.japan",
       "teamB": "->teams.poland",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165104"
     },
     "48":{
       "friendlyId": 48,
@@ -789,7 +789,7 @@
       "channel": "",
       "teamA": "->teams.senegal",
       "teamB": "->teams.colombia",
-      "footDbUrl": "http://api.football-data.org/v1/fixtures/"
+      "footDbUrl": "http://api.football-data.org/v1/fixtures/165103"
     },
     "49":{
       "friendlyId": 49,
