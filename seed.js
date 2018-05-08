@@ -1,7 +1,9 @@
+require("babel-register");
+
 import mongoose from 'mongoose';
 import config from './config/env';
 import seeder from 'mongoose-seeder';
-import data from './server/seed/data.json';
+import data from './server/seed/data-2018.json';
 import Game from './server/models/game';
 import Team from './server/models/team';
 import Promise from 'bluebird';

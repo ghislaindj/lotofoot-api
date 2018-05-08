@@ -794,7 +794,7 @@
     "49":{
       "friendlyId": 49,
       "phase": 1,
-      "date": "2016-06-30",
+      "date": "2018-06-30",
       "time": "21:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Stade Ficht, Sotchi",
@@ -805,7 +805,7 @@
     "50":{
       "friendlyId": 50,
       "phase": 1,
-      "date": "2016-06-30",
+      "date": "2018-06-30",
       "time": "17:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Kazan Arena, Kazan",
@@ -816,7 +816,7 @@
     "51":{
       "friendlyId": 51,
       "phase": 1,
-      "date": "2016-07-01",
+      "date": "2018-07-01",
       "time": "17:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Stade Loujniki, Moscou",
@@ -827,7 +827,7 @@
     "52":{
       "friendlyId": 52,
       "phase": 1,
-      "date": "2016-07-01",
+      "date": "2018-07-01",
       "time": "21:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Stade de Nijni Novgorod, Nijni Novgorod",
@@ -838,7 +838,7 @@
     "53":{
       "friendlyId": 53,
       "phase": 1,
-      "date": "2016-07-02",
+      "date": "2018-07-02",
       "time": "18:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Stade de Samara, Samara",
@@ -849,7 +849,7 @@
     "54":{
       "friendlyId": 54,
       "phase": 1,
-      "date": "2016-07-02",
+      "date": "2018-07-02",
       "time": "21:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Rostov Arena, Rostov-sur-le-Don",
@@ -860,7 +860,7 @@
     "55":{
       "friendlyId": 55,
       "phase": 1,
-      "date": "2016-07-03",
+      "date": "2018-07-03",
       "time": "17:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Stade Krestovski, Saint-Pétersbourg",
@@ -871,7 +871,7 @@
     "56":{
       "friendlyId": 56,
       "phase": 1,
-      "date": "2016-07-03",
+      "date": "2018-07-03",
       "time": "21:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Stade du Spartak, Moscou",
@@ -882,7 +882,7 @@
     "57":{
       "friendlyId": 57,
       "phase": 2,
-      "date": "2016-07-06",
+      "date": "2018-07-06",
       "time": "17:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Stade de Nijni Novgorod, Nijni Novgorod",
@@ -893,7 +893,7 @@
     "58":{
       "friendlyId": 58,
       "phase": 2,
-      "date": "2016-07-06",
+      "date": "2018-07-06",
       "time": "21:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Kazan-Arena, Kazan",
@@ -904,7 +904,7 @@
     "59":{
       "friendlyId": 59,
       "phase": 2,
-      "date": "2016-07-07",
+      "date": "2018-07-07",
       "time": "21:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Stade Ficht, Sotchi",
@@ -915,7 +915,7 @@
     "60":{
       "friendlyId": 60,
       "phase": 2,
-      "date": "2016-07-07",
+      "date": "2018-07-07",
       "time": "18:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Samara Arena, Samara",
@@ -926,7 +926,7 @@
     "61":{
       "friendlyId": 61,
       "phase": 3,
-      "date": "2016-07-10",
+      "date": "2018-07-10",
       "time": "21:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Stade Krestovski, Saint-Pétersbourg",
@@ -937,7 +937,7 @@
     "62":{
       "friendlyId": 62,
       "phase": 3,
-      "date": "2016-07-11",
+      "date": "2018-07-11",
       "time": "21:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Stade Loujniki, Moscou",
@@ -948,7 +948,7 @@
     "63":{
       "friendlyId": 63,
       "phase": 4,
-      "date": "2016-07-14",
+      "date": "2018-07-14",
       "time": "17:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Stade Krestovski, Saint-Pétersbourg",
@@ -959,13 +959,13 @@
     "64":{
       "friendlyId": 64,
       "phase": 4,
-      "date": "2016-07-15",
+      "date": "2018-07-15",
       "time": "18:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "Stade Loujniki, Moscou",
       "channel": "",
       "futureTeamA": "W61",
       "futureTeamB": "W62"
-    },
+    }
   }
 }
