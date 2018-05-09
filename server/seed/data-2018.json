@@ -799,8 +799,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "fisht",
       "channel": "",
-      "futureTeamA": "A1",
-      "futureTeamB": "B2"
+      "futureTeamA": "a1",
+      "futureTeamB": "b2"
     },
     "50":{
       "friendlyId": 50,
@@ -810,8 +810,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "kazan",
       "channel": "",
-      "futureTeamA": "C1",
-      "futureTeamB": "D2"
+      "futureTeamA": "c1",
+      "futureTeamB": "d2"
     },
     "51":{
       "friendlyId": 51,
@@ -821,8 +821,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "luzhniki",
       "channel": "",
-      "futureTeamA": "B1",
-      "futureTeamB": "A2"
+      "futureTeamA": "b1",
+      "futureTeamB": "a2"
     },
     "52":{
       "friendlyId": 52,
@@ -832,8 +832,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "nizhny-novgorod",
       "channel": "",
-      "futureTeamA": "D1",
-      "futureTeamB": "C2"
+      "futureTeamA": "d1",
+      "futureTeamB": "c2"
     },
     "53":{
       "friendlyId": 53,
@@ -843,8 +843,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "cosmos",
       "channel": "",
-      "futureTeamA": "E1",
-      "futureTeamB": "F2"
+      "futureTeamA": "e1",
+      "futureTeamB": "f2"
     },
     "54":{
       "friendlyId": 54,
@@ -854,8 +854,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "rostov",
       "channel": "",
-      "futureTeamA": "G1",
-      "futureTeamB": "H2"
+      "futureTeamA": "g1",
+      "futureTeamB": "h2"
     },
     "55":{
       "friendlyId": 55,
@@ -865,8 +865,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "krestovsky",
       "channel": "",
-      "futureTeamA": "F1",
-      "futureTeamB": "E2"
+      "futureTeamA": "f1",
+      "futureTeamB": "e2"
     },
     "56":{
       "friendlyId": 56,
@@ -876,8 +876,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "otkritie",
       "channel": "",
-      "futureTeamA": "H1",
-      "futureTeamB": "G2"
+      "futureTeamA": "h1",
+      "futureTeamB": "g2"
     },
     "57":{
       "friendlyId": 57,
@@ -887,8 +887,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "nizhny-novgorod",
       "channel": "",
-      "futureTeamA": "W49",
-      "futureTeamB": "W50"
+      "futureTeamA": "w49",
+      "futureTeamB": "w50"
     },
     "58":{
       "friendlyId": 58,
@@ -898,8 +898,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "kazan",
       "channel": "",
-      "futureTeamA": "W53",
-      "futureTeamB": "W54"
+      "futureTeamA": "w53",
+      "futureTeamB": "w54"
     },
     "59":{
       "friendlyId": 59,
@@ -909,8 +909,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "fisht",
       "channel": "",
-      "futureTeamA": "W51",
-      "futureTeamB": "W52"
+      "futureTeamA": "w51",
+      "futureTeamB": "w52"
     },
     "60":{
       "friendlyId": 60,
@@ -920,8 +920,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "cosmos",
       "channel": "",
-      "futureTeamA": "W55",
-      "futureTeamB": "W56"
+      "futureTeamA": "w55",
+      "futureTeamB": "w56"
     },
     "61":{
       "friendlyId": 61,
@@ -931,8 +931,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "krestovsky",
       "channel": "tf1",
-      "futureTeamA": "W57",
-      "futureTeamB": "W58"
+      "futureTeamA": "w57",
+      "futureTeamB": "w58"
     },
     "62":{
       "friendlyId": 62,
@@ -942,8 +942,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "luzhniki",
       "channel": "tf1",
-      "futureTeamA": "W59",
-      "futureTeamB": "W60"
+      "futureTeamA": "w59",
+      "futureTeamB": "w60"
     },
     "63":{
       "friendlyId": 63,
@@ -953,8 +953,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "krestovsky",
       "channel": "tf1",
-      "futureTeamA": "L61",
-      "futureTeamB": "L62"
+      "futureTeamA": "l61",
+      "futureTeamB": "l62"
     },
     "64":{
       "friendlyId": 64,
@@ -964,8 +964,8 @@
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "luzhniki",
       "channel": "tf1",
-      "futureTeamA": "W61",
-      "futureTeamB": "W62"
+      "futureTeamA": "w61",
+      "futureTeamB": "w62"
     }
   }
 }
