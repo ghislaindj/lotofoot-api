@@ -18,7 +18,8 @@ const config = {
         defaultBcc: process.env.EMAIL_BCC,
         prefix: process.env.EMAIL_PREFIX || ''
     },
-    webUrl: process.env.WEB_URL
+    webUrl: process.env.WEB_URL,
+    apiUrl: process.env.API_URI
 };
 
 export default config;

@@ -1,6 +1,7 @@
 import express from 'express';
 import userRoutes from './user';
 import recoveryRoutes from './recovery';
+import validationRoutes from './validation';
 import gameRoutes from './game';
 import teamRoutes from './team';
 import predictionRoutes from './prediction';
@@ -21,6 +22,7 @@ router.use('/games', gameRoutes);
 router.use('/teams', teamRoutes);
 router.use('/predictions', predictionRoutes);
 router.use('/reset-password', recoveryRoutes);
+router.use('/validation', validationRoutes);
 router.use('/messages', messageRoutes);
 
 export default router;

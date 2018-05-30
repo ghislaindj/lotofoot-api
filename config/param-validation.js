@@ -49,6 +49,11 @@ export default {
             password: Joi.string().min(3).max(20).required()
         }
     },
+    sendValidationEmail: {
+        body: {
+            email: Joi.string().email().required()
+        }
+    },
     createMessage: {
         body: {
             text: Joi.string().required()
