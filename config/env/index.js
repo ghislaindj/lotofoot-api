@@ -19,7 +19,7 @@ const config = {
         prefix: process.env.EMAIL_PREFIX || ''
     },
     webUrl: process.env.WEB_URL,
-    apiUrl: process.env.API_URI
+    apiUrl: process.env.API_URL
 };
 
 export default config;
