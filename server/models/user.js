@@ -4,6 +4,7 @@ import httpStatus from 'http-status';
 import APIError from '../helpers/APIError';
 import bcrypt from 'bcryptjs';
 import Prediction from './prediction';
+import crypto from 'crypto';
 import _ from 'lodash';
 
 /**
@@ -32,6 +33,13 @@ const UserSchema = new mongoose.Schema({
     hasPaid: {
         type: Boolean,
         default: false
+    },
+    emailValidated: {
+        type: Boolean,
+        default: false
+    },
+    emailValidationToken: {
+        type: String
     },
     firstName: {
         type: String,
@@ -94,6 +102,15 @@ UserSchema.pre('save', function (next) {
     next();
 });
 
+UserSchema.pre('save', function (next) {
+    if(_.isUndefined(this.emailValidationToken) || _.isEmpty(this.emailValidationToken)) {
+        const buf = crypto.randomBytes(48);
+        const token = buf.toString('base64').replace(/\//g, '_').replace(/\+/g, '-');
+
+        this.emailValidationToken = token;
+    }
+    next();
+});
 
 UserSchema.set('toJSON', {
     virtuals: true,
@@ -106,6 +123,7 @@ UserSchema.set('toJSON', {
             firstName: ret.firstName,
             lastName: ret.lastName,
             hasPaid: ret.hasPaid,
+            emailValidated: ret.emailValidated,
             points: ret.points,
             createdAt: ret.createdAt,
             updatedAt: ret.updatedAt

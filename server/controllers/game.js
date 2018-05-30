@@ -60,7 +60,7 @@ function update(req, res, next) {
  * @returns {Game[]}
  */
 function list(req, res, next) {
-    const { limit = 50, skip = 0 } = req.query;
+    const { skip = 0, limit = 61 } = req.query;
     Game.list({ limit, skip }).then((games) =>  res.json(games))
         .error((e) => next(e));
 }

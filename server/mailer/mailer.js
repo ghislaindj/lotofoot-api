@@ -48,4 +48,10 @@ function sendPasswordResetEmail(user, accessToken) {
     return send(user.email, subject, body);
 }
 
-export default { send, sendPasswordResetEmail, notifyAll };
+function sendConfirmationEmail(user, validationToken) {
+    const subject = `⚽️🏆 ${user.firstName}, please validate your email`
+    const body = `You just need to click here to validate your email : ${config.apiUrl}/validation?token=${validationToken}&email=${user.email}`;
+    return send(user.email, subject, body);
+}
+
+export default { send, sendPasswordResetEmail, sendConfirmationEmail, notifyAll };
