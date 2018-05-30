@@ -55,6 +55,8 @@ function register(req, res, next) {
         .then((savedUser) => {
             var token = jwt.sign({ id: savedUser.id, pass: savedUser.password}, config.secret, {expiresIn: config.expiresIn});
 
+            mailer.sendConfirmationEmail(savedUser, savedUser.emailValidationToken)
+
             mailer.notifyAll("User registered", {
                 firstName: savedUser.firstName, 
                 email: savedUser.email
