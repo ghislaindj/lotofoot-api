@@ -435,7 +435,7 @@
       "time": "17:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "ekaterinburg",
-      "channel": "",
+      "channel": "tf1",
       "teamA": "->teams.france",
       "teamB": "->teams.peru",
       "footDbUrl": "http://api.football-data.org/v1/fixtures/165096"
@@ -448,7 +448,7 @@
       "time": "14:00",
       "datetime": "=moment(this.date + ' ' + this.time, 'YYYY-MM-DD HH:mm').toDate()",
       "stadium": "cosmos",
-      "channel": "tf1",
+      "channel": "",
       "teamA": "->teams.denmark",
       "teamB": "->teams.australia",
       "footDbUrl": "http://api.football-data.org/v1/fixtures/165099"

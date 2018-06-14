@@ -201,7 +201,7 @@ PredictionSchema.statics = {
      * @param {number} limit - Limit number of predictions to be returned.
      * @returns {Promise<Prediction[]>}
      */
-    list({ skip = 0, limit = 50, game, user } = {}) {
+    list({ skip = 0, limit = 500, game, user } = {}) {
         let filters = {};
         if(game) filters.game = game;
         if(user) filters.user = user;
