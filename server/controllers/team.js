@@ -25,7 +25,7 @@ function get(req, res) {
  * @returns {Team[]}
  */
 function list(req, res, next) {
-    const { limit = 500, skip = 0 } = req.query;
+    const { limit = 50, skip = 0 } = req.query;
     Team.list({ limit, skip }).then((teams) =>  res.json(teams))
         .error((e) => next(e));
 }

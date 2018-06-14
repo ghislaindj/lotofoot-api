@@ -66,7 +66,7 @@ MessageSchema.statics = {
      * @param {number} limit - Limit number of messages to be returned.
      * @returns {Promise<Message[]>}
      */
-    list({ skip = 0, limit = 500 } = {}) {
+    list({ skip = 0, limit = 60 } = {}) {
         return this.find()
             .sort({ createdAt: -1 })
             .skip(skip)

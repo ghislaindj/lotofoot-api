@@ -75,7 +75,7 @@ TeamSchema.statics = {
      * @param {number} limit - Limit number of teams to be returned.
      * @returns {Promise<Team[]>}
      */
-    list({ skip = 0, limit = 500 } = {}) {
+    list({ skip = 0, limit = 50 } = {}) {
         return this.find()
             .sort({ name: 1 })
             .skip(skip)
