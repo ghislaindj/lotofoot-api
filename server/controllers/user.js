@@ -108,7 +108,7 @@ function login(req, res, next) {
  * @returns {User[]}
  */
 function list(req, res, next) {
-    const { limit = 50, skip = 0 } = req.query;
+    const { limit = 500, skip = 0 } = req.query;
     User.list({ limit, skip }).then((users) =>  res.json(users))
         .error((e) => next(e));
 }

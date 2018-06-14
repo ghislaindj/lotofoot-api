@@ -50,7 +50,7 @@ function create(req, res, next) {
  * @returns {Message[]}
  */
 function list(req, res, next) {
-    const { limit = 50, skip = 0, game, user } = req.query;
+    const { limit = 500, skip = 0, game, user } = req.query;
     Message.list({ limit, skip, game, user }).then((messages) =>  res.json(messages))
         .error((e) => next(e));
 }

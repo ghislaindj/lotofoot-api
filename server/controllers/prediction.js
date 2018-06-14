@@ -62,7 +62,7 @@ function update(req, res, next) {
  * @returns {Prediction[]}
  */
 function list(req, res, next) {
-    const { limit = 50, skip = 0, game, user } = req.query;
+    const { limit = 500, skip = 0, game, user } = req.query;
     Prediction.list({ limit, skip, game, user }).then((predictions) =>  res.json(predictions))
         .error((e) => next(e));
 }
