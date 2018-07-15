@@ -37,8 +37,10 @@ export default function(game) {
             if(!_.isUndefined(fixture.result.goalsHomeTeam)) score.scoreTeamA = parseInt(fixture.result.goalsHomeTeam);
             if(!_.isUndefined(fixture.result.goalsAwayTeam)) score.scoreTeamB = parseInt(fixture.result.goalsAwayTeam);
 
-            if(!_.isUndefined(fixture.result.extraTime.goalsHomeTeam)) score.scoreTeamA = parseInt(fixture.result.extraTime.goalsHomeTeam);
-            if(!_.isUndefined(fixture.result.extraTime.goalsAwayTeam)) score.scoreTeamB = parseInt(fixture.result.extraTime.goalsAwayTeam);
+            if(!_.isUndefined(fixture.result.extraTime)) {
+                if(!_.isUndefined(fixture.result.extraTime.goalsHomeTeam)) score.scoreTeamA = parseInt(fixture.result.extraTime.goalsHomeTeam);
+                if(!_.isUndefined(fixture.result.extraTime.goalsAwayTeam)) score.scoreTeamB = parseInt(fixture.result.extraTime.goalsAwayTeam);
+            }
 
             score.resultDetails = getResultDetails(fixture.result);
 
