@@ -7,10 +7,12 @@ import app from './config/express';
 Promise.promisifyAll(mongoose);
 
 // connect to mongo db
-mongoose.connect(config.db, { server: { socketOptions: { keepAlive: 1 } } });
-mongoose.connection.on('error', (error) => {
-    throw new Error(`unable to connect to database: ${config.db} - ${error}`);
-});
+mongoose.connect(config.db, { useNewUrlParser: true })
+    .then((data) => {
+        console.log('Mongo success ' + config.db);
+    }, (err) => {
+        console.log('Mongo error ' + config.db + ' - ' + err);
+    });
 
 const debug = require('debug')('lotofoot-api:index');
 
