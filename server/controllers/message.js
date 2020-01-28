@@ -51,7 +51,7 @@ function create(req, res, next) {
  */
 function list(req, res, next) {
     const { limit = 60, skip = 0, game, user } = req.query;
-    Message.list({ limit, skip, game, user }).then((messages) =>  res.json(messages))
+    Message.list({ limit: parseInt(limit), skip: parseInt(skip), game, user }).then((messages) =>  res.json(messages))
         .error((e) => next(e));
 }
 

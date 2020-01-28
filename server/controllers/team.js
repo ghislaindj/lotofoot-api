@@ -26,7 +26,7 @@ function get(req, res) {
  */
 function list(req, res, next) {
     const { limit = 50, skip = 0 } = req.query;
-    Team.list({ limit, skip }).then((teams) =>  res.json(teams))
+    Team.list({ limit: parseInt(limit), skip: parseInt(skip) }).then((teams) =>  res.json(teams))
         .error((e) => next(e));
 }
 
