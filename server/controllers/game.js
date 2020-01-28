@@ -27,7 +27,7 @@ function get(req, res) {
  */
 function next(req, res) {
     const { limit = 3 } = req.query;
-    Game.next({ limit }).then((games) =>  res.json(games))
+    Game.next({ limit: parseInt(limit) }).then((games) =>  res.json(games))
         .error((e) => next(e));
 }
 
@@ -61,7 +61,7 @@ function update(req, res, next) {
  */
 function list(req, res, next) {
     const { skip = 0, limit = 61 } = req.query;
-    Game.list({ limit, skip }).then((games) =>  res.json(games))
+    Game.list({ limit: parseInt(limit), skip: parseInt(skip) }).then((games) =>  res.json(games))
         .error((e) => next(e));
 }
 
